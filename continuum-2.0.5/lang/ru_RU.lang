@@ -1,0 +1,394 @@
+# Copyright (C) Continuum Graphics - All Rights Reserved
+# Unauthorized copying of this file, via any medium is strictly prohibited
+# Proprietary and confidential
+# Written by Joseph Conover <support@continuum.graphics>, Febuary 2018
+
+# shaders/lang/en_US.lang
+
+# Profiles
+profile.MINIMUM=Минимум
+profile.LOW=Низко
+profile.MEDIUM=Средне
+profile.HIGH=Выше
+profile.ULTRA=Ультра
+profile.CINEMATIC=Кинематографическая
+profile.comment=Кинематографичкский режим - это полноценный мем! Выберите его, если хотите провести ХОРОШЕЕ время . . .
+
+#Screens
+screen.CAMERA=Настройки камеры
+screen.CAMERA.comment=Настройки для камеры, глубины резкости, и тональности.
+screen.LENS=Настройки объектива
+screen.LENS.comment=Настройка глубины резкости и бликов объектива. Настройте форму размытия.
+screen.TONING=Настройки постобработки
+screen.TONING.comment=Настройте параметры, связанные с последующей постобработкой.
+screen.FILMIC=Кинематографические модификаторы
+screen.FILMIC.comment=Опции для оператора кинематографической тональности.
+screen.TAAOPTIONS=Настройки TAA
+screen.TAAOPTIONS.comment=Опции для временного сглаживания.
+screen.SURFACE=Настройки поверхности
+screen.SURFACE.comment=Качество освещения и параметров материала. Может значительно повлиять на производительность.
+screen.PARALLAX=Настройки параллакса
+screen.PARALLAX.comment=Настройки параллакса.
+screen.MATERIAL=Настройки материала
+screen.MATERIAL.comment=Настройки материалов.
+screen.SHADOW=Настройки теней
+screen.SHADOW.comment=Настройки теней.
+screen.AMBIENT=Настройки окружающего освежения
+screen.AMBIENT.comment=Настройки AO.
+screen.SPECULAR=Зеркальные настройки
+screen.SPECULAR.comment=Настройки зеркальности/отражения.
+screen.GI=Настройки глобального освещения
+screen.GI.comment=Настройки для глобального освещения.
+screen.ATMOSPHERICS=Настройки атмосферы.
+screen.ATMOSPHERICS.comment=Настройки, имеющие отношение к атмосфере.
+screen.CLOUDS=Настройка облаков
+screen.CLOUDS.comment=Настройки для 2D и объёмных облаков.
+screen.VCLOUDS=Настройки объёмных облаков
+screen.VCLOUDS.comment=Настройки для объёмных облаков.
+screen.VLIGHT=Настройки объёмного освещения
+screen.VLIGHT.comment=Объёмное освещение.
+screen.INTERNAL=Внутренние настройки
+screen.INTERNAL.comment=Настройки для разработчиков!
+screen.MISC=Разные настройки
+screen.MISC.comment=Незначительные настройки.
+screen.LIGHTING=Настройки освещения
+screen.LIGHTING.comment=Настройки для общего освещения.
+
+# Camera Settings
+value.CAMERA_MODE.CAMERA_AUTO=Авто
+value.CAMERA_MODE.CAMERA_MANUAL=Ручной
+
+option.CAMERA_MODE=Режим камеры
+option.CAMERA_MODE.comment=Режим работы камеры. 'Авто' лучше всего подходит для игрового процесса, где камера будет настраиваться сама. 'Ручной' лучше всего подходит для скриншотов и кинематографии, где необходим точный контроль над камерой.
+option.CAMERA_APERTURE=Апертура
+option.CAMERA_APERTURE.comment=Размер апературы (в f - Относительное Отверсие Объектива).
+option.CAMERA_ISO=ISO
+option.CAMERA_ISO.comment=Чувствительность датчика к свету.
+option.CAMERA_SHUTTER_SPEED=Выдержка
+option.CAMERA_SHUTTER_SPEED.comment=Время экспозиции каждого кадра.
+option.CAMERA_EV=Смещение EV.
+option.CAMERA_EV.comment=Регулировка экспозиции.
+option.CAMERA_FOCAL_LENGTH=Фокусное расстояние.
+option.CAMERA_FOCAL_LENGTH.comment=Расстояние до основной фокусной точки в миллиметрах. Эффекты бликов объектива и глубины резкости в ручном режиме.
+suffix.CAMERA_FOCAL_LENGTH= мм
+
+value.CAMERA_FOCUS_MODE.1=Ручной
+value.CAMERA_FOCUS_MODE.0=Авто
+
+option.CAMERA_FOCUS_MODE=Режим фокусировки камеры
+option.CAMERA_FOCUS_MODE.comment=Режим фокусировки камеры. 'Авто' фокусируется на том, на что смотрит игрок. 'Ручной' позволяет игроку установить расстояние, на котором камера пытается сфокусироваться (в метрах).
+option.CAMERA_FOCAL_POINT=Фокуская точка камеры
+option.CAMERA_FOCAL_POINT.comment=Расстояние, на котором камера пытается сфокусироваться, когда камера установлена в режим ручной фокусировки.
+suffix.CAMERA_FOCAL_POINT= М
+
+# DoF Settings
+value.DOF_SAMPLES.DOF_MINIMUM=Минимум
+value.DOF_SAMPLES.DOF_LOW=Низко
+value.DOF_SAMPLES.DOF_MEDIUM=Средне
+value.DOF_SAMPLES.DOF_HIGH=Выше
+value.DOF_SAMPLES.DOF_ULTRA=Ультра
+value.DOF_SAMPLES.DOF_CINEMATIC=Кинематография
+
+option.DOF=Глубина резкости
+option.DOF.comment=Фокус камеры.
+option.DOF_SAMPLES=Качество глубины резкости.
+option.DOF_SAMPLES.comment=Качество размытия. Низко - 32. Средне - 64. Выше - 128. Ультра - 256. Кинематография - 1024.
+
+option.CAMERA_BLADES=Количество граней с отверстиями
+option.CAMERA_BLADES.comment=Количество граней, которые имеет объектив:. 3 = Треугольник. 4 = Квадрат. 5 = Пятиугольник. 6 = Шестиугольник. и т.п.
+option.BLADE_ROTATION=Вращение граней
+option.BLADE_ROTATION.comment="Крутит" размытие вокруг центра.
+option.BLADE_ROUNDING=Закруглевание граней
+option.BLADE_ROUNDING.comment=Степень закруглевания или "размягчения" по краям формы отверстия. 0 = никакой округлости. 1 = полностью круглый (Круг).
+option.CAMERA_BIAS=Смещение камеры.
+option.CAMERA_BIAS.comment=Изменяет поглощение линзы. 0.0 = полностью поглощённый. 1.0 = полностью смещенный.
+option.LENS_SHIFT_AMOUNT=Величина поглощения объектива.
+option.DISTORTION_ANAMORPHIC=Амаморфное искажение.
+
+# Lens Settings
+value.BLOOM_SAMPLES.BLOOM_LOW=Низко
+value.BLOOM_SAMPLES.BLOOM_MEDIUM=Средне
+value.BLOOM_SAMPLES.BLOOM_HIGH=Выше
+value.BLOOM_SAMPLES.BLOOM_ULTRA=Ультра
+
+option.LENS_FLARE=Блик объектива
+option.LENS_FLARE_STRENGTH=Сила бликов объектива
+
+option.BLOOM=Блум
+option.BLOOM_SAMPLES=Качество блума
+option.BLOOM_EV=Блум EC
+option.BLOOM_EV.comment=Свещение блума EV. Регулирует яркость блума.
+option.BLOOM_CURVE=Кривая блума
+
+# Post Process Settings
+option.TONING_FILMIC=Кинематографическая тональность
+option.SAT_MOD=Насыщение
+option.SAT_MOD.comment=Модификатор насыщенности.
+option.VIB_MOD=Вибрация
+option.VIB_MOD.comment=Модификатор вибрации.
+option.CONT_MOD=Контраст
+option.CONT_MOD.comment=Модификатор контраста.
+option.CONT_MIDPOINT=Контрастная середина.
+option.GAMMA_CORRECTION=Гамма
+option.GAIN_MOD=Увеличение
+option.GAIN_MOD.comment=Прямая яркость.
+option.LIFT_MOD=Подъём
+option.LIFT_MOD.comment=Смещение чёрной точки.
+option.LUT=L.U.T
+option.WHITE_BALANCE=Баланс белого
+option.TINT_BALANCE=Оттенок
+
+option.ACES_TOE=Нога
+option.ACES_SLOPE=Склон
+option.ACES_SHOULDER=Плечо
+option.ACES_BLACK_CLIP=Чёрная обрезка
+option.ACES_WHITE_CLIP=Белая обрезка
+option.ACES_GLOW_GAIN=Модификатор свечения
+option.ACES_GLOW_MID=Средняя точка свечения
+option.ACES_EXPAND_GAMUT=Расширение гаммы
+
+# TAA options
+option.TAA_AGGRESSION=Агрессия TAA
+option.TAA_SHARPNESS=Резкость TAA
+option.TAA_SHARPEN=Наточенность TAA
+
+# Light Settings
+option.sky_sunLuminanceBase=Яркость солнца
+option.sky_sunColorTemperature=Температура солнца
+option.sky_moonLuminanceBase=Яркость луны
+option.sky_moonColorTemperature=Температура луны
+option.TORCH_LUMINANCE=Яркость факела
+option.TORCH_TEMPERATURE=Температура факела
+
+suffix.sky_sunColorTemperature=K
+suffix.sky_moonColorTemperature=K
+suffix.TORCH_TEMPERATURE=K
+
+suffix.sky_sunLuminanceBase= lx
+suffix.sky_moonLuminanceBase= lx
+suffix.TORCH_LUMINANCE= lx
+
+# Shadow Settings
+value.SHADOW_QUALITY.SHADOW_MINIMUM=Минимум
+value.SHADOW_QUALITY.SHADOW_LOW=Низко
+value.SHADOW_QUALITY.SHADOW_MEDIUM=Средне
+value.SHADOW_QUALITY.SHADOW_HIGH=Выше
+value.SHADOW_QUALITY.SHADOW_ULTRA=Ультра
+value.SHADOW_QUALITY.SHADOW_CINEMATIC=Кинематография
+
+option.SHADOW_QUALITY=Качество теней
+option.SHADOW_QUALITY.comment=Качество размытия теней. Минимум - 2. Низко - 3. Средне - 9. Выше - 18. Ультра - 25. Кинематография - 81.
+option.SHADOW_PENUMBRA_ANGLE=Угол полутени
+option.shadowMapResolution=Разрешение карты теней
+option.shadowDistance=Дистанция теней
+option.SHADOW_DISTORTION_FACTOR=Коэффициент искажения
+
+value.SHADOW_TYPE.SHADOW_HARD=Жёсткие тени
+value.SHADOW_TYPE.SHADOW_SOFT=Мягкие тени
+value.SHADOW_TYPE.SHADOW_PCSS=Двойные PCSS
+
+option.SHADOW_TYPE=Тип тени
+
+option.CAUSTICS=Водяная щелочь
+
+# Ambient Settings
+value.AMBIENT_SAMPLES.AMBIENT_MINIMUM=Минимум
+value.AMBIENT_SAMPLES.AMBIENT_LOW=Низко
+value.AMBIENT_SAMPLES.AMBIENT_MEDIUM=Средне
+value.AMBIENT_SAMPLES.AMBIENT_HIGH=Выше
+value.AMBIENT_SAMPLES.AMBIENT_ULTRA=Ультра
+value.AMBIENT_SAMPLES.AMBIENT_CINEMATIC=Кинематография
+
+option.AMBIENT_SAMPLES=Качество окружающей среды
+option.AMBIENT_SAMPLES.comment=Качество AO.
+
+option.AO_CHEAP=дешёвый AO
+option.AO_CHEAP.comment=Отключает дальнее поле AO.
+
+# Specular Settings
+option.SPECULAR_CLAMP=Зеркальный прижим
+option.SPECULAR_TAIL_CLAMP=Смещение зеркального зажима
+value.SPECULAR_QUALITY.SPECULAR_MINIMUM=Минимум
+value.SPECULAR_QUALITY.SPECULAR_LOW=Низко
+value.SPECULAR_QUALITY.SPECULAR_MEDIUM=Средне
+value.SPECULAR_QUALITY.SPECULAR_HIGH=Выше
+value.SPECULAR_QUALITY.SPECULAR_ULTRA=Ультра
+value.SPECULAR_QUALITY.SPECULAR_CINEMATIC=Кинематография
+
+option.SPECULAR_QUALITY=Зеркальное качество
+option.SPECULAR_QUALITY.comment=Зеркальные лучи на пиксель.
+
+option.RAIN_PUDDLES=Дождевые лужи
+
+option.REFLECT_2D_CLOUDS=Опция отражения 2D облаков
+option.REFLECT_3D_CLOUDS=Опция отражения 3D облаков
+option.REFLECTED_CLOUDS_QUALITY=Качество отражённых облаков
+option.REFLECTED_CLOUDS_QUALITY_DIRECT=Качество освещения отражённых облаков
+
+value.REFLECTED_CLOUDS_QUALITY.REFLECTED_CLOUDS_MINIMUM=Минимум
+value.REFLECTED_CLOUDS_QUALITY.REFLECTED_CLOUDS_LOW=Низко
+value.REFLECTED_CLOUDS_QUALITY.REFLECTED_CLOUDS_MEDIUM=Средне
+value.REFLECTED_CLOUDS_QUALITY.REFLECTED_CLOUDS_HIGH=Выше
+value.REFLECTED_CLOUDS_QUALITY.REFLECTED_CLOUDS_ULTRA=Ультра
+value.REFLECTED_CLOUDS_QUALITY.REFLECTED_CLOUDS_CINEMATIC=Кинематография
+
+value.REFLECTED_CLOUDS_QUALITY_DIRECT.REFLECTED_CLOUDS_MINIMUM=Минимум
+value.REFLECTED_CLOUDS_QUALITY_DIRECT.REFLECTED_CLOUDS_LOW=Низко
+value.REFLECTED_CLOUDS_QUALITY_DIRECT.REFLECTED_CLOUDS_MEDIUM=Средне
+value.REFLECTED_CLOUDS_QUALITY_DIRECT.REFLECTED_CLOUDS_HIGH=Выше
+value.REFLECTED_CLOUDS_QUALITY_DIRECT.REFLECTED_CLOUDS_ULTRA=Ультра
+value.REFLECTED_CLOUDS_QUALITY_DIRECT.REFLECTED_CLOUDS_CINEMATIC=Кинематография
+
+value.RAYTRACE_QUALITY.RAYTRACE_MINIMUM=Минимум
+value.RAYTRACE_QUALITY.RAYTRACE_LOW=Низко
+value.RAYTRACE_QUALITY.RAYTRACE_MEDIUM=Средне
+value.RAYTRACE_QUALITY.RAYTRACE_HIGH=Выше
+value.RAYTRACE_QUALITY.RAYTRACE_ULTRA=Ультра
+value.RAYTRACE_QUALITY.RAYTRACE_CINEMATIC=Кинематография
+
+option.RAYTRACE_QUALITY=Качество трассировки лучей
+option.RAYTRACE_QUALITY.comment=Проход на луч.
+
+value.RAYTRACE_REFINES.REFINES_MINIMUM=Минимум
+value.RAYTRACE_REFINES.REFINES_LOW=Низко
+value.RAYTRACE_REFINES.REFINES_MEDIUM=Средне
+value.RAYTRACE_REFINES.REFINES_HIGH=Выше
+value.RAYTRACE_REFINES.REFINES_ULTRA=Ультра
+value.RAYTRACE_REFINES.REFINES_CINEMATIC=Кинематография
+
+option.RAYTRACE_REFINES=Точность трассировки лучей
+option.RAYTRACE_REFINES.comment=Уточняет каждый луч.
+
+# Parallax Settings
+option.TERRAIN_PARALLAX=Параллакс
+option.WATER_PARALLAX=Параллакс воды
+
+value.TERRAIN_PARALLAX_SAMPLES.PARALLAX_MINIMUM=Минимум
+value.TERRAIN_PARALLAX_SAMPLES.PARALLAX_LOW=Низко
+value.TERRAIN_PARALLAX_SAMPLES.PARALLAX_MEDIUM=Средне
+value.TERRAIN_PARALLAX_SAMPLES.PARALLAX_HIGH=Выше
+value.TERRAIN_PARALLAX_SAMPLES.PARALLAX_ULTRA=Ультра
+value.TERRAIN_PARALLAX_SAMPLES.PARALLAX_CINEMATIC=Кинематография
+
+option.TERRAIN_PARALLAX_SAMPLES=Качество параллакса
+option.TERRAIN_PARALLAX_SAMPLES.comment=Максимум проходов.
+
+value.WATER_PARALLAX_SAMPLES.WPARALLAX_MINIMUM=Минимум
+value.WATER_PARALLAX_SAMPLES.WPARALLAX_LOW=Низко
+value.WATER_PARALLAX_SAMPLES.WPARALLAX_MEDIUM=Средне
+value.WATER_PARALLAX_SAMPLES.WPARALLAX_HIGH=Выше
+value.WATER_PARALLAX_SAMPLES.WPARALLAX_ULTRA=Ультра
+value.WATER_PARALLAX_SAMPLES.WPARALLAX_CINEMATIC=Кинематография
+
+option.WATER_PARALLAX_SAMPLES=Качество параллакса
+
+option.TERRAIN_PARALLAX_DEPTH=Глубина параллакса
+option.WATER_PARALLAX_DEPTH=Глубина параллакса воды
+
+# Material Settings
+value.SPECULAR_MODE.SPECULAR_OLD=Старый PBR
+value.SPECULAR_MODE.SPECULAR_NEW=Continuum PBR
+value.SPECULAR_MODE.SPECULAR_LAB=Lab PBR
+
+option.SPECULAR_MODE=Формат зеркальной карты
+option.SPECULAR_MODE.comment=Используйте 'Lab PBR' с новыми текстурами, использующими формат shaderLAB PBR. Используйте 'Старый PBR' с старыми текстурами, использующими старый формат PBR. Используйте 'Continuum PBR' с текстурами, использующими старый формат Continuum PBR.
+
+option.REFRACTION=Преломление
+
+# Atmospheric Settings
+option.CLOUDS_2D=2D облака
+option.CLOUDS_2D_DENSITY=Плотность 2D облаков
+option.CLOUDS_2D_COVERAGE=Покрытие 2D облаков
+
+option.VOLUMETRIC_CLOUDS=Объёмные облака
+
+value.VOLUMETRIC_CLOUDS_QUALITY.VC_MINIMUM=Минимум
+value.VOLUMETRIC_CLOUDS_QUALITY.VC_LOW=Низко
+value.VOLUMETRIC_CLOUDS_QUALITY.VC_MEDIUM=Средне
+value.VOLUMETRIC_CLOUDS_QUALITY.VC_HIGH=Выше
+value.VOLUMETRIC_CLOUDS_QUALITY.VC_ULTRA=Ультра
+value.VOLUMETRIC_CLOUDS_QUALITY.VC_CINEMATIC=Кинематография
+
+option.VOLUMETRIC_CLOUDS_QUALITY=Качество объёмных облаков
+
+option.VOLUMETRIC_CLOUDS_ALTITUDE=Высота
+option.VOLUMETRIC_CLOUDS_SPEED=Скорость
+option.VOLUMETRIC_CLOUDS_DENSITY=Плотность
+option.VOLUMETRIC_CLOUDS_COVERAGE=Покрытие
+
+option.VOLUMETRIC_CLOUDS_SHADOWS=Тени облаков
+option.VOLUMETRIC_CLOUDS_SHADOWS_STEPS=Тени объёмных облаков
+
+value.VOLUMETRIC_CLOUDS_SHADOWS_STEPS.VCS_MINIMUM=Минимум
+value.VOLUMETRIC_CLOUDS_SHADOWS_STEPS.VCS_LOW=Низко
+value.VOLUMETRIC_CLOUDS_SHADOWS_STEPS.VCS_MEDIUM=Средне
+value.VOLUMETRIC_CLOUDS_SHADOWS_STEPS.VCS_HIGH=Выше
+value.VOLUMETRIC_CLOUDS_SHADOWS_STEPS.VCS_ULTRA=Ультра
+value.VOLUMETRIC_CLOUDS_SHADOWS_STEPS.VCS_CINEMATIC=Кинематография
+
+value.VOLUMETRIC_CLOUDS_DIRECT_QUALITY.VCL_MINIMUM=Минимум
+value.VOLUMETRIC_CLOUDS_DIRECT_QUALITY.VCL_LOW=Низко
+value.VOLUMETRIC_CLOUDS_DIRECT_QUALITY.VCL_MEDIUM=Средне
+value.VOLUMETRIC_CLOUDS_DIRECT_QUALITY.VCL_HIGH=Выше
+value.VOLUMETRIC_CLOUDS_DIRECT_QUALITY.VCL_ULTRA=Ультра
+value.VOLUMETRIC_CLOUDS_DIRECT_QUALITY.VCL_CINEMATIC=Кинематография
+
+option.VOLUMETRIC_CLOUDS_DIRECT_QUALITY=Прямое качество
+
+value.VOLUMETRIC_CLOUDS_INDIRECT_QUALITY.VCL_MINIMUM=Минимум
+value.VOLUMETRIC_CLOUDS_INDIRECT_QUALITY.VCL_LOW=Низко
+value.VOLUMETRIC_CLOUDS_INDIRECT_QUALITY.VCL_MEDIUM=Средне
+value.VOLUMETRIC_CLOUDS_INDIRECT_QUALITY.VCL_HIGH=Выше
+value.VOLUMETRIC_CLOUDS_INDIRECT_QUALITY.VCL_ULTRA=Ультра
+value.VOLUMETRIC_CLOUDS_INDIRECT_QUALITY.VCL_CINEMATIC=Кинематография
+
+option.VOLUMETRIC_CLOUDS_INDIRECT_QUALITY=Косвенное качество
+option.HQ_CLOUD_FBM=HQ Cloud FBM
+
+option.VOLUMETRIC_LIGHT=Объёмный свет
+
+value.VL_QUALITY.VL_MINIMUM=Минимум
+value.VL_QUALITY.VL_LOW=Низко
+value.VL_QUALITY.VL_MEDIUM=Средне
+value.VL_QUALITY.VL_HIGH=Выше
+value.VL_QUALITY.VL_ULTRA=Ультра
+value.VL_QUALITY.VL_CINEMATIC=Кинематография
+
+option.VL_QUALITY=Качество объёмного света
+
+option.AERIAL_VL=Воздушный объёмный свет
+
+option.VL_COLOURED_SHADOW=Цветные тени
+
+option.VL_CLOUD_SHADOW=Тени облаков
+option.VL_SELF_SHADOW=Самозатемнение
+
+option.MORNING_FOG_FALLOFF=Падение утреннего тупана
+option.MORNING_FOG_DENSITY=Плотность утреннего тумана
+
+#global illumination Settings
+option.GLOBAL_ILLUMINATION=Глобальное освещение
+option.GI_RADIUS=Радиус
+option.GI_QUALITY=Качество
+
+value.GI_QUALITY.GI_MINIMUM=Минимум
+value.GI_QUALITY.GI_LOW=Низко
+value.GI_QUALITY.GI_MEDIUM=Средне
+value.GI_QUALITY.GI_HIGH=Выше
+value.GI_QUALITY.GI_ULTRA=Ультра
+value.GI_QUALITY.GI_CINEMATIC=Кинематография
+
+option.TIME_SPEED=Множитель скорости
+option.WHITE_WORLD=Белый мир
+
+# Debug settings
+option.DEBUG=Debug
+option.DEBUG_VIEW=Вид Debug
+value.DEBUG_VIEW.-1=gbuffers_solid
+value.DEBUG_VIEW.0=deferred
+value.DEBUG_VIEW.9=gbuffers_translucent
+value.DEBUG_VIEW.10=composite
+value.DEBUG_VIEW.11=composite1
+value.DEBUG_VIEW.12=composite2
+value.DEBUG_VIEW.13=composite3
+value.DEBUG_VIEW.20=final
