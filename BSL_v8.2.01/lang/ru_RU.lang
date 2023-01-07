@@ -1,0 +1,763 @@
+#shaders/lang/en_us.lang
+
+#Profiles
+profile.LOW=Низко
+profile.MEDIUM=Средне
+profile.HIGH=Выше
+profile.ULTRA=Ультра
+profile.comment=Низко: низкие тени, никаких дополнительных эффектов. Средне: средние тени, никакиз дополнительных эффектов. Выше: средние тени, AO и световые лучи. Ультра: высокие тени, AO, и световые лучи.
+
+#Screens
+screen.LIGHTING=Освещение
+
+screen.MATERIAL=Материал
+screen.SPECULAR=Зеркальность и отражение
+screen.NORMALS=Нормали и пароллакс
+
+screen.ATMOSPHERICS=Атмосфера
+screen.SKY=Конфигурация неба
+screen.CLOUDS=Конфигурация облак
+
+screen.WATER=Вода
+
+screen.CAMERA=Камера
+
+screen.ANTIALIASING=Сглаживание
+
+screen.COLOR=Цвет
+screen.LIGHT_COLOR=Цвет освещения
+screen.LIGHT_M=освещение (Утро)
+screen.AMBIENT_M=Окружение (Утром)
+screen.LIGHT_D=освещение (Днём)
+screen.AMBIENT_D=Окружение (Днём)
+screen.LIGHT_E=освещение (Вечером)
+screen.AMBIENT_E=Окружение (Вечером)
+screen.LIGHT_N=освещение (Ночью)
+screen.AMBIENT_N=Окружение (Ночью)
+screen.MINLIGHT=Минимальное освещение
+screen.BLOCKLIGHT_COLOR=Цвет "блочного" света
+screen.SKY_COLOR=Цвет неба
+screen.WATER_COLOR=Цвет воды
+screen.WEATHER_COLOR=Цвет погоды
+screen.WEATHER_R=Дождь (Нормальный)
+screen.WEATHER_C=Снегопад
+screen.WEATHER_D=Песчаная буря в Пустыне
+screen.WEATHER_B=Песчаная буря в Mesa
+screen.WEATHER_S=Болотный дождь
+screen.WEATHER_M=Дождь на грибном острове
+screen.WEATHER_V=Облачность в Саванне
+screen.AURORA_COLOR=Цвет полярного сияния
+screen.AURORA_L=Цвет низкого сечения
+screen.AURORA_H=Цвет высокого сечения
+screen.DIMENSION_COLOR=Цвет измерения
+screen.NETHER_COLOR=Цвет Ада
+screen.NETHER_N=Адские пусоши (Ад)
+screen.NETHER_V=Песчаная долина душ (Ад)
+screen.NETHER_C="Малиновый" лес (Ад)
+screen.NETHER_W=Искажённый лес (Ад)
+screen.NETHER_B=Базальтовые Дельты (Ад)
+screen.END_COLOR=Цвет Края
+
+screen.CGT=Цветовая градация и тональная карта
+screen.COLOR_GRADING=Конфигурация цветовой градации
+screen.CG_R=Красный канал
+screen.CG_G=Зелёный канал
+screen.CG_B=Синий канал
+screen.CG_T=Оттенок
+
+screen.EXTRAS=Дополнительно
+
+screen.ANIMATION=Анимации
+
+#Settings
+option.ABOUT=BSL v8.2.01
+option.ABOUT.comment=От Capt Tatsu. bitslablab.com
+value.ABOUT.0=От Capt Tatsu
+
+#Lighting
+option.shadowMapResolution=Качество теневой карты
+option.shadowMapResolution.comment=Настраивает размер карты теней. §e[*]§rБолее высокое разрешение даёт более чёткие тени, но снижает производительность.
+value.shadowMapResolution.512=Очень низко (512)
+value.shadowMapResolution.1024=Низко (1024)
+value.shadowMapResolution.2048=Средне (2048)
+value.shadowMapResolution.3072=Выше (3072)
+value.shadowMapResolution.4096=Очень высоко (4096)
+value.shadowMapResolution.8192=Ультра высоко (8192)
+
+option.shadowDistance=Дистанция теней
+option.shadowDIstance.comment=Настраивает дистанцию теней
+
+option.SHADOW_COLOR=Цветная тень
+option.SHADOW_COLOR.comment=Позволяет создавать тонированные тени из полупрозрачных материалов. §a[+]§rИспользуется для цветных объёмных световых лучей. §c[-]§rНесколько меньшяя производительность при использовании теневой фильтрации.
+
+option.SHADOW_FILTER=Фильтрация теней
+option.SHADOW_FILTER.comment=Включает фильтрацию теней.
+
+option.SHADOW_ENTITY=Тень существ
+option.SHADOW_ENTITY.comment=Включает тени существам. §e[*]§rОтключите это, когда вокруг огромное множество существ. §e[*]§rРаботает на 1.16.5+.
+
+option.SHADOW_PIXEL=Пиксельные заблокированные тени
+option.SHADOW_PIXEL.comment=Применяет эффект пикселизации к теням.
+value.SHADOW_PIXEL.0=Отключено
+
+option.sunPathRotation=Вращение траектории солнца
+option.sunPathRotation.comment=Регулирует угол наклона солнца.
+
+option.AO=Окружающая окклюзия
+option.AO.comment=Добавляет мягкие тени вокруг контакта с поверхностью или пересечением.
+
+option.AO_STRENGTH=Сила AO.
+option.AO_STRENGTH.comment=Регулирует силу окклюзии окружающей среды.
+
+option.DESATURATION=Десатурация
+option.DESATURATION.comment=Уменьшает насыщенность, добавляя немного оттенка в более тёмные области.
+
+option.DESATURATION_FACTOR=Коэффициент десатурации
+option.DESATURATION_FACTOR.comment=Регулирует максимальную применяемую степень десатурации.
+value.DESATURATION_FACTOR.2.0=Очень низко
+value.DESATURATION_FACTOR.1.5=Низко
+value.DESATURATION_FACTOR.1.0=Средне
+value.DESATURATION_FACTOR.0.5=Высоко
+value.DESATURATION_FACTOR.0.0=Очень высоко
+
+option.DYNAMIC_HANDLIGHT=Динамический ручной фонарь
+option.DYNAMIC_HANDLIGHT.comment=Позволяет блокировать излучение света из поля зрения при удержании определённых объектов.
+
+option.WHITE_WORLD=Белый мир
+option.WHITE_WORLD.comment=Заменяет текстуры ровным белым цветом.
+
+#Material
+option.ADVANCED_MATERIALS=Новые материалы
+option.ADVANCED_MATERIALS.comment=Позволяет использовать зеркальное и нормальное (нормали) отображение, что позволяет получить более подробную информацию о различных вещах. §e[*]§rДля этой опции требуется пакет ресурсов, содержащий зеркальные и\или нормальные карты (нормали). Отключите, если ничто из перечисленного не используется. §e[*]§rВарианты, для которых требуется современные материалы, обозначено *. Изменение этих параметров не повлияет на производительность или визуальные эффекты, пока дополнительные материалы отключены.
+
+option.MATERIAL_FORMAT=Формат материала*
+option.MATERIAL_FORMAT.comment=Определяет формат зеркальной и нормальной (нормали) карты, используемый пакетом ресурсов. §e[*]§rРазработчики текстур обычно сообщают, какой формат используется в их пакете ресурсов. Использование неправильного формата может привести к странным результатам.
+value.MATERIAL_FORMAT.0=SEUS/Старый PBR
+value.MATERIAL_FORMAT.1=labPBR 1.3
+
+option.SSS=Подповерхностное рассеивание*
+option.SSS.comment=Позволяет свету проникать и рассеиваться через блоки. §a[+]§rЭтот эффект выигрывает у TAA.
+
+option.BASIC_SSS=Основное рассеивание
+option.BASIC_SSS.comment=Позволяет использовать упрощённую версию подповерхностного рассеивания для определённых блоков.
+
+option.EMISSIVE=Излучение
+option.EMISSIVE.comment=Позволяет определённым поверхностям быть ярче.
+value.EMISSIVE.0=§cОтключено
+value.EMISSIVE.1=Только AdvMat*
+value.EMISSIVE.2=Полностью
+
+option.ALBEDO_BALANCING=Балансировка Albedo
+option.ALBEDO_BALANCING.comment=Уменьшает яркость очень ярких цветных поверхностей.
+
+option.ALPHA_BLEND=Альфа-смешивание
+option.ALPHA_BLEND.comment=Определяет, как выполняется смешивание прозрачности.
+value.ALPHA_BLEND.0=Гамма
+value.ALPHA_BLEND.1=Линейно
+
+option.ENTITY_FLASH="Вспышка" сущности
+option.ENTITY_FLASH.comment=Позволяет мигать повреждённым объектам и ближайщему криперу.
+
+#Specular & Reflections
+option.REFLECTION=Отражения
+option.REFLECTION.comment=Обеспечивает отражения на воде и полупрозрачность.
+value.REFLECTION.0=§cОтключено
+value.REFLECTION.1=Только небо и зеркальное отражение
+value.REFLECTION.2=Полностью
+
+option.REFLECTION_TRANSLUCENT=Полупрозрачные отражения
+option.REFLECTION_TRANSLUCENT.comment=Позволяет отоброжать отражение на полупрозрачных поверхностях, таких как лёд, блоки слизи и т.п.
+
+option.REFLECTION_SPECULAR=Зеркальное отражение*
+option.REFLECTION_SPECULAR.comment=Обеспечивает отражение на гладких или металлических поверхностях.
+
+option.REFLECTION_RAIN=Отражение дождя*
+option.REFLECTION_RAIN.comment=Позволяет поверхностям быть влажными во время дождя.  §e[*]§rТребуется зеркальное отражение.
+
+option.REFLECTION_ROUGH=Грубое отражение*
+option.REFLECTION_ROUGH.comment=Позволяет поверхностям с меньшей гладкостью отображать размытые отражения. §c[-]§rМожет содержать небольшие "артефакты".
+
+option.REFLECTION_PREVIOUS=Отражение предыдущего кадра
+option.REFLECTION_PREVIOUS.comment=Позволяет отражать полупрозрачное изображение, использую информацию о предыдущем кадре. §c[-]§rМожет привести к отсутствию отражений на скриншоте (Вызвано настройкой размера скриншота). §c[-]§rНесовместим с некоторыми графическими процессорами. §c[-]§rБагует на 1.7.10.
+
+option.SPECULAR_HIGHLIGHT_ROUGH=Грубая зеркальная подсветка
+option.SPECULAR_HIGHLIGHT_ROUGH.comment=Придаёт шероховатым поверхностям слабый блеск.
+
+option.ALBEDO_METAL=Жёстко запрограммированый затонированный металл с Albedo*
+option.ALBEDO_METAL.comment=Наносит базовую текстуру в качестве оттенка на метталические поверхности с твёрдым покрытием. §e[*]§rРаботает только в формате материала labPBR.
+
+option.REFLECTION_MODE=Режим отражения
+option.REFLECTION_MODE.comment=Настраивает поведение отражения.
+value.REFLECTION_MODE.0=Меньше дубликатов
+value.REFLECTION_MODE.1=Сбалансированный
+value.REFLECTION_MODE.2=Больше заполнения пробелов
+
+option.REFLECTION_SKY_FALLOFF="Спад" отражения неба
+option.REFLECTION_SKY_FALLOFF.comment=Регулирует, насколько затухает отражение неба при низком освещении под крышой.
+value.REFLECTION_SKY_FALLOFF.1=Очень слабый
+value.REFLECTION_SKY_FALLOFF.2=Слабый
+value.REFLECTION_SKY_FALLOFF.4=Сбалансированный
+value.REFLECTION_SKY_FALLOFF.8=Сильный
+value.REFLECTION_SKY_FALLOFF.16=Очень сильный
+
+#Normals & Parallax
+option.PARALLAX=Отображение параллаксной окклюзии*
+option.PARALLAX.comment=Добавляет смещение на поверхности с помощью карты высот.
+
+option.PARALLAX_DEPTH=Глубина параллакса*
+option.PARALLAX_DEPTH.comment=Регулирует глубину параллакса.
+value.PARALLAX_DEPTH.0.05=5см
+value.PARALLAX_DEPTH.0.10=10см
+value.PARALLAX_DEPTH.0.15=15см
+value.PARALLAX_DEPTH.0.20=20см
+value.PARALLAX_DEPTH.0.25=25см
+value.PARALLAX_DEPTH.0.30=30см
+value.PARALLAX_DEPTH.0.35=35см
+value.PARALLAX_DEPTH.0.40=40см
+value.PARALLAX_DEPTH.0.45=45см
+value.PARALLAX_DEPTH.0.50=50см
+
+option.PARALLAX_QUALITY=Образцы параллакса*
+option.PARALLAX_QUALITY.comment=Настраивает качество отображения параллаксной окклюзии.
+
+option.PARALLAX_DISTANCE=Дистанция параллакса*
+option.PARALLAX_DISTANCE.comment=Настраивает степень отображения параллакса, окклюзии и собственных теней.
+
+option.SELF_SHADOW=Собственные тени*
+option.SELF_SHADOW.comment=Позволяет поверхности отбрасывать тень на саму себя с помощью карты высот.
+
+option.SELF_SHADOW_ANGLE=Угол самозатемнения*
+option.SELF_SHADOW_ANGLE.comment=Регулирует угол самозатемнения, более высокое значение позволяет тени перемещаться дальше.
+
+option.SELF_SHADOW_QUALITY=Образцы самозатемнения*
+option.SELF_SHADOW_QUALITY.comment=Настраивает качество самозатемнения.
+
+option.SELF_SHADOW_STRENGTH=Сила самозатемнения*
+option.SELF_SHADOW_STRENGTH.comment=Регулирует интенсивность замозатемнения.
+
+option.DIRECTIONAL_LIGHTMAP=Карта направленного света*
+option.DIRECTIONAL_LIGHTMAP.comment=Добавляет обычное отображение к ванильному отображению. §c[-]§rПри включённом эффекте карта освещения может давать сбои.
+
+option.DIRECTIONAL_LIGHTMAP_STRENGTH=Направленная сила световой карты*
+option.DIRECTIONAL_LIGHTMAP_STRENGTH.comment=Регулирует интенсивность карты направленного света.
+value.DIRECTIONAL_LIGHTMAP_STRENGTH.2.0=Очень низко
+value.DIRECTIONAL_LIGHTMAP_STRENGTH.1.4=Низко
+value.DIRECTIONAL_LIGHTMAP_STRENGTH.1.0=Средне
+value.DIRECTIONAL_LIGHTMAP_STRENGTH.0.7=Выше
+value.DIRECTIONAL_LIGHTMAP_STRENGTH.0.5=Очень высоко
+
+option.NORMAL_DAMPENING=Нормальное увлажнение (нормали)*
+option.NORMAL_DAMPENING.comment=Уменьшает интенсивность нормальной (нормали) карты, чтобы отражения не были слишком "шумными".
+
+option.NORMAL_PLANTS=Выращенные растения
+option.NORMAL_PLANTS.comment=Регулирует затемнение растений. §e[*]§rОтключите это, если используется не плоская модель или к растениям применяется карта нормалей.
+
+#Atmospherics
+option.CLOUDS=Облака
+option.CLOUDS.comment=Включает облака. §a[+]§rОблака по умолчанию выигрывают у TTA. §e[*]§rВанильные облака требуют, чтобы этот параметр был установлен по умолчанию или отключён.
+value.CLOUDS.0=§cОтключён
+value.CLOUDS.1=По умолчанию
+value.CLOUDS.2=Ванильные облака
+
+option.SKY_DESATURATION=Десатурация неба
+option.SKY_DESATURATION.comment=Уменьшает насыщенность, добавляя некоторый оттенок к скайбоксу ночью.
+
+option.AURORA=Полярное сияние
+option.AURORA.comment=Включает полярное сияние. §a[+]§rЭтот эффект выигрывает у TAA.
+
+option.ROUND_SUN_MOON=Круглое солнце и луна
+option.ROUND_SUN_MOON.comment=Включает солнце и луну на основе шейдеров. §e[*]§rОтключите ванильное солнце и луну на 1.15.2 или выше.
+
+option.DISTANT_FADE=Отдалённое затухание
+option.DISTANT_FADE.comment=Исчезает далеко за границами чанка. §e[*]§rНа этот параметр влияет плотность тумана.
+value.DISTANT_FADE.0=§cОтключено
+value.DISTANT_FADE.1=Только обычный мир
+value.DISTANT_FADE.2=Только Ад и Край
+value.DISTANT_FADE.3=Полностью
+
+option.DISTANT_FADE_STYLE=Стиль отдалённого затухания
+option.DISTANT_FADE_STYLE.comment=Сферический работает как ванильный туман. Цилиндрический игнорирует ось Y.
+value.DISTANT_FADE_STYLE.0=Сферический
+value.DISTANT_FADE_STYLE.1=Цилиндрический
+
+option.WEATHER_PERBIOME=Погода биомов
+option.WEATHER_PERBIOME.comment=Используйте различные цвета погоды для разных биомов. §c[-]§rМожет не работать в неизвестных условиях.
+
+option.UNDERGROUND_SKY=Исправление подземного неба
+option.UNDERGROUND_SKY.comment=Скрывает небо, когда игрок находится в тёмной области и ниже уровня моря (Y: 62). §c[-]§rНе подходит для миров с низкой суперплоскостью.
+
+option.LIGHT_SHAFT=Световые лучи
+option.LIGHT_SHAFT.comment=Добавляет объёмные лучи от солнца и луны. §a[+]§rЭтот эффект выигрывает у TAA. §e[*]§rПроизводительность зависит от разрешения карты теней.
+
+option.LIGHT_SHAFT_STRENGTH=Сила световых лучей
+option.LIGHT_SHAFT_STRENGTH.comment=Регулирует силу световых лучей.
+
+option.FOG_DENSITY=Плотность тумана
+option.FOG_DENSITY.comment=Регулирует плотность тумана. §e[*]§rЭтот параметр игнорируется в Аду.
+
+option.WEATHER_OPACITY=Плотность погоды
+option.WEATHER_OPACITY.comment=Регулирует плотность погоды.
+
+#Sky Config
+option.SKY_DENSITY_D=Дневная плотность
+option.SKY_EXPOSURE_D=Дневная экспозиция
+option.SKY_DENSITY_N=Ночная плотность
+option.SKY_EXPOSURE_N=Ночная экспозиция
+option.SKY_DENSITY_W=Плотность погоды
+option.SKY_EXPOSURE_W=Экспозиция погоды
+option.SKY_HORIZON_N=Близкий горизонт
+option.SKY_HORIZON_F=Дальний горизонт
+option.SKY_GROUND=Подземное небо
+option.SKY_GROUND.comment=Затемняет нижнюю часть неба. §e[*]§rНа этот параметр влияет плотность тумана.
+value.SKY_GROUND.0=§cОтключено
+value.SKY_GROUND.1=Только отражения
+value.SKY_GROUND.2=Полностью
+
+option.SKYBOX_BRIGHTNESS=Яркость скайбокса
+option.SKYBOX_BRIGHTNESS.comment=Регулирует яркость скайбокса. §e[*]§rУстановите на 1.00, когда существует субтрактивный скайбокс.
+
+#Cloud Config
+option.CLOUD_BASE=Базоавя форма
+option.CLOUD_BASE.comment=Определяет, какой тип "шума" используется для базовой формы облака.
+value.CLOUD_BASE.0=Perlin
+value.CLOUD_BASE.1=Worley
+
+option.CLOUD_DENSITY=Плотность
+option.CLOUD_DENSITY.comment=Регулирует плотность облаков, более высокая плотность делает артефакты более заметными.
+value.CLOUD_DENSITY.1=Очень низко
+value.CLOUD_DENSITY.2=Низко
+value.CLOUD_DENSITY.4=Средне
+value.CLOUD_DENSITY.6=Выше
+value.CLOUD_DENSITY.8=Очень выского
+
+option.CLOUD_AMOUNT=Количество
+option.CLOUD_AMOUNT.comment=Регулирует количество облаков.
+value.CLOUD_AMOUNT.12.0=Очень низко
+value.CLOUD_AMOUNT.11.0=Низко
+value.CLOUD_AMOUNT.10.0=Средне
+value.CLOUD_AMOUNT.9.0=Выше
+value.CLOUD_AMOUNT.8.0=Очень выского
+
+option.CLOUD_HEIGHT=Высота
+option.CLOUD_HEIGHT.comment=Регулирует высоту облаков.
+value.CLOUD_HEIGHT.5.0=Очень низко
+value.CLOUD_HEIGHT.7.5=Низко
+value.CLOUD_HEIGHT.10.0=Средне
+value.CLOUD_HEIGHT.12.5=Выше
+value.CLOUD_HEIGHT.15.0=Очень высоко
+
+option.CLOUD_THICKNESS=Толщина
+option.CLOUD_THICKNESS.comment=Регулирует толщину облаков.
+value.CLOUD_THICKNESS.2=Очень низко
+value.CLOUD_THICKNESS.4=Низко
+value.CLOUD_THICKNESS.5=Средне
+value.CLOUD_THICKNESS.7=Высоко
+value.CLOUD_THICKNESS.10=Очень высоко
+
+option.CLOUD_DETAIL=Детализация
+option.CLOUD_DETAIL.comment=Регулирует детализацию облаков.
+value.CLOUD_DETAIL.0.3=Очень низко
+value.CLOUD_DETAIL.0.7=Низко
+value.CLOUD_DETAIL.1.0=Средне
+value.CLOUD_DETAIL.1.3=Выше
+value.CLOUD_DETAIL.1.7=Очень высоко
+
+option.CLOUD_SPEED=Скорость
+option.CLOUD_SPEED.comment=Регулирует скорость игроков.
+
+option.CLOUD_OPACITY=Непрозрачность
+option.CLOUD_OPACITY.comment=Регулирует непрозрачность облаков.
+
+option.CLOUD_BRIGHTNESS=Яркость
+option.CLOUD_BRIGHTNESS.comment=Регулирует яркость облаков.
+
+#Water
+option.WATER_MODE=Режим текстуры воды
+option.WATER_MODE.comment=Определяет, следует ли использовать текстуру "ванильной" воды. По умолчанию: плоский цвет шейдера воды. Ванилла: ванильные текстуры. Тонированная ванилла: Вванильные текстуры с цветом шейдера воды. Плоская ванилла: плоский ванильный цвет воды.
+value.WATER_MODE.0=По умолчанию
+value.WATER_MODE.1=Ванилла
+value.WATER_MODE.2=Тонированная ванилла
+value.WATER_MODE.3=Плоская ванилла
+
+option.WATER_ALPHA_MODE=Альфа-режим воды
+option.WATER_ALPHA_MODE.comment=Определяет, использует ли вода альфа-значение на основе шейдера или текстуры. §e[*]§rНекоторый эффект будет продолжать использовать альфа-значение на основе шейдера.
+value.WATER_ALPHA_MODE.0=Плоский
+value.WATER_ALPHA_MODE.1=Ванилла
+
+option.WATER_NORMALS=Нормалы
+option.WATER_NORMALS.comment=Включает сгенерированное в реальном времени отображение нормалей для воды.
+value.WATER_NORMALS.0=§cОтключено
+value.WATER_NORMALS.1=Worley
+value.WATER_NORMALS.2=Perlin
+
+option.WATER_PARALLAXПараллах
+option.WATER_PARALLAX.comment=Обеспечивает смещение воды.
+
+option.WATER_DETAIL=Детализация
+option.WATER_DETAIL.comment=Регулирует соотношение между большой и малой нормалями воды.
+value.WATER_DETAIL.0.05=5%
+value.WATER_DETAIL.0.10=10%
+value.WATER_DETAIL.0.15=15%
+value.WATER_DETAIL.0.20=20%
+value.WATER_DETAIL.0.25=25%
+value.WATER_DETAIL.0.30=30%
+value.WATER_DETAIL.0.35=35%
+value.WATER_DETAIL.0.40=40%
+value.WATER_DETAIL.0.45=45%
+value.WATER_DETAIL.0.50=50%
+
+option.WATER_BUMP=Неровность
+option.WATER_BUMP.comment=Регулирует интенсивность нормализации воды.
+
+option.WATER_SHARPNESS=Чёткость
+option.WATER_SHARPNESS.comment=Регулирует резкость водяных нормалей.
+value.WATER_SHARPNESS.0.8=Низко
+value.WATER_SHARPNESS.0.5=Средне
+value.WATER_SHARPNESS.0.2=Выше
+
+option.WATER_SPEED=Скорость
+option.WATER_SPEED.comment=Регулирует скорость "шума" для нормализации уровня воды.
+
+option.WATER_FOG_DENSITY=Плотность тумана воды
+option.WATER_FOG_DENSITY.comment=Регулирует плотностью тумана воды.
+
+option.WATER_PIXEL=Блокировка пикселей
+option.WATER_PIXEL.comment=Применяет эффект пикселизации к нормалям воды.
+value.WATER_PIXEL.0=Отключено
+
+#Camera
+option.DOF=Глубина резкости
+options.DOF.comment=Включает эффект фокусировки камеры.
+option.DOF_STRENGTH=Сила глубины резкости
+option.DOF_STRENGTH.comment=Регулирует силу фокусировки, более высокое значение размывает изображение быстрее.
+
+option.MOTION_BLUR=Размытость
+option.MOTION_BLUR.comment=Включает размытость при движении на основе движения камеры.
+
+option.MOTION_BLUR_STRENGTH=Сила размытия
+option.MOTION_BLUR_STRENGTH.comment=Регулирует интенсивность размытия при движении.
+
+option.BLOOM=Блум
+option.BLOOM.comment=Позволяет ярким участкам светиться.
+
+option.BLOOM_STRENGTH=Сила блума
+option.BLOOM_STRENGTH.comment=Регулирует интенсивность блума.
+
+option.BLOOM_CONTRAST=Контраст блума
+option.BLOOM_CONTRAST.comment=Настраивает, должен ли блум сохранять цветовой контраст или видимость деталей. Более высокое значение сохраняет цветовой контраст, в то время как более низкое значение сохраняет видимость деталей.
+value.BLOOM_CONTRAST.-4=-1.00
+value.BLOOM_CONTRAST.-3=-0.75
+value.BLOOM_CONTRAST.-2=-0.50
+value.BLOOM_CONTRAST.-1=-0.25
+value.BLOOM_CONTRAST.0=0.00
+value.BLOOM_CONTRAST.1=0.25
+value.BLOOM_CONTRAST.2=0.50
+value.BLOOM_CONTRAST.3=0.75
+value.BLOOM_CONTRAST.4=1.00
+
+option.BLOOM_RADIUS=Радиус блума
+option.BLOOM_RADIUS.comment=Регулирует, насколько далеко распространяется освещение.
+value.BLOOM_RADIUS.1=Минимум
+value.BLOOM_RADIUS.2=Очень низко
+value.BLOOM_RADIUS.3=Низко
+value.BLOOM_RADIUS.4=Средне
+value.BLOOM_RADIUS.5=Выше
+value.BLOOM_RADIUS.6=Очень высоко
+value.BLOOM_RADIUS.7=Максимум
+
+option.LENS_FLARE=Блик объектива
+option.LENS_FLARE.comment=Включает блики объектива.
+
+option.LENS_FLARE_STRENGTH=Сила бликов объектива
+option.LENS_FLARE_STRENGTH.comment=Регулирует интенсивность бликов объектива.
+
+option.VIGNETTE=Виньетка
+option.Vignette.comment=Затемняет края экрана до чёрного цвета. §e[*]§rОтключите для отображения на 360 градусов.
+
+option.VIGNETTE_STRENGTHСила виньетки
+option.VIGNETTE_STRENGTH.comment=Регулирует интенсивность виньетки.
+value.VIGNETTE_STRENGTH.0.26=0.1
+value.VIGNETTE_STRENGTH.0.51=0.2
+value.VIGNETTE_STRENGTH.0.72=0.3
+value.VIGNETTE_STRENGTH.0.91=0.4
+value.VIGNETTE_STRENGTH.1.06=0.5
+value.VIGNETTE_STRENGTH.1.19=0.6
+value.VIGNETTE_STRENGTH.1.28=0.7
+value.VIGNETTE_STRENGTH.1.36=0.8
+value.VIGNETTE_STRENGTH.1.40=0.9
+value.VIGNETTE_STRENGTH.1.41=1.0
+
+option.DIRTY_LENS=Загрязнение линз
+option.DIRTY_LENS.comment=Придаёт блуму эффект загрязнения. §e[*]§rТребует блум.
+
+option.CHROMATIC_ABERRATION=Хроматическая аберрация
+option.CHROMATIC_ABERRATION.comment=Добавляет цветовое искажение по границам.
+value.CHROMATIC_ABERRATION.0=Отключено
+value.CHROMATIC_ABERRATION.1=Слабое
+value.CHROMATIC_ABERRATION.2=Сильное
+
+
+option.UNDERWATER_DISTORTION=Подводное искажение
+option.UNDERWATER_DISTORTION.comment=Применяет искажение экрана во время нахождения под водой.
+
+#Anti-aliasing
+option.FXAA=FXAA
+option.FXAA.comment=Обеспечивает быстрое приблизительное сглаживание, выполняемое путём сглаживания краёв с минимальными затратами на производительность. §e[*]§rОтключите сглаживание в меню шейдеров, пока эта опция включена.
+
+option.TAA=TAA
+option.TAA.comment=Включает временное сглаживание, выполняемое с помощью интеллектуального смешивания кадров, которое улучшает захват мельчайших деталей и некоторых эффектов. §e[*]§rЗатачивание включено в комплект. §e[*]§rОтключите сглаживание в меню шейдеров, пока эта опция включена.
+
+#Color
+option.LIGHT_MR=Красный
+option.LIGHT_MG=Зелёный
+option.LIGHT_MB=Синий
+option.LIGHT_MI=Интенсивность
+
+option.LIGHT_DR=Красный
+option.LIGHT_DG=Зелёный
+option.LIGHT_DB=Синий
+option.LIGHT_DI=Интенсивность
+
+option.LIGHT_ER=Красный
+option.LIGHT_EG=Зелёный
+option.LIGHT_EB=Синий
+option.LIGHT_EI=Интенсивность
+
+option.LIGHT_NR=Красный
+option.LIGHT_NG=Зелёный
+option.LIGHT_NB=Синий
+option.LIGHT_NI=Интенсивность
+
+option.AMBIENT_MR=Красный
+option.AMBIENT_MG=Зелёный
+option.AMBIENT_MB=Синий
+option.AMBIENT_MI=Интенсивность
+
+option.AMBIENT_DR=Красный
+option.AMBIENT_DG=Зелёный
+option.AMBIENT_DB=Синий
+option.AMBIENT_DI=Интенсивность
+
+option.AMBIENT_ER=Красный
+option.AMBIENT_EG=Зелёный
+option.AMBIENT_EB=Синий
+option.AMBIENT_EI=Интенсивность
+
+option.AMBIENT_NR=Красный
+option.AMBIENT_NG=Зелёный
+option.AMBIENT_NB=Синий
+option.AMBIENT_NI=Интенсивность
+
+option.MINLIGHT_R=Красный
+option.MINLIGHT_G=Зелёный
+option.MINLIGHT_B=Синий
+option.MINLIGHT_I=Интенсивность
+value.MINLIGHT_I.0.30=0.30 (Тусклый)
+value.MINLIGHT_I.0.50=0.50 (По умолчанию)
+value.MINLIGHT_I.0.70=0.70 (Яркий)
+
+option.BLOCKLIGHT_R=Красный
+option.BLOCKLIGHT_G=Зелёный
+option.BLOCKLIGHT_B=Синий
+option.BLOCKLIGHT_I=Интенсивность
+
+option.SKY_R=Красный
+option.SKY_G=Зелёный
+option.SKY_B=Синий
+option.SKY_I=Интенсивность
+
+option.WATER_R=Красный
+option.WATER_G=Зелёный
+option.WATER_B=Синий
+option.WATER_I=Интенсивность
+option.WATER_A=Альфа
+
+option.WEATHER_RR=Красный
+option.WEATHER_RG=Зелёный
+option.WEATHER_RB=Синий
+option.WEATHER_RI=Интенсивность
+
+option.WEATHER_CR=Красный
+option.WEATHER_CG=Зелёный
+option.WEATHER_CB=Синий
+option.WEATHER_CI=Интенсивность
+
+option.WEATHER_DR=Красный
+option.WEATHER_DG=Зелёный
+option.WEATHER_DB=Синий
+option.WEATHER_DI=Интенсивность
+
+option.WEATHER_BR=Красный
+option.WEATHER_BG=Зелёный
+option.WEATHER_BB=Синий
+option.WEATHER_BI=Интенсивность
+
+option.WEATHER_SR=Красный
+option.WEATHER_SG=Зелёный
+option.WEATHER_SB=Синий
+option.WEATHER_SI=Интенсивность
+
+option.WEATHER_MR=Красный
+option.WEATHER_MG=Зелёный
+option.WEATHER_MB=Синий
+option.WEATHER_MI=Интенсивность
+
+option.WEATHER_VR=Красный
+option.WEATHER_VG=Зелёный
+option.WEATHER_VB=Синий
+option.WEATHER_VI=Интенсивность
+
+option.AURORA_LR=Красный
+option.AURORA_LG=Зелёный
+option.AURORA_LB=Синий
+option.AURORA_LI=Интенсивность
+
+option.AURORA_HR=Красный
+option.AURORA_HG=Зелёный
+option.AURORA_HB=Синий
+option.AURORA_HI=Интенсивность
+
+option.NETHER_NR=Красный
+option.NETHER_NG=Зелёный
+option.NETHER_NB=Синий
+option.NETHER_NI=Интенсивность
+
+option.NETHER_VR=Красный
+option.NETHER_VG=Зелёный
+option.NETHER_VB=Синий
+option.NETHER_VI=Интенсивность
+
+option.NETHER_CR=Красный
+option.NETHER_CG=Зелёный
+option.NETHER_CB=Синий
+option.NETHER_CI=Интенсивность
+
+option.NETHER_WR=Красный
+option.NETHER_WG=Зелёный
+option.NETHER_WB=Синий
+option.NETHER_WI=Интенсивность
+
+option.NETHER_BR=Красный
+option.NETHER_BG=Зелёный
+option.NETHER_BB=Синий
+option.NETHER_BI=Интенсивность
+
+option.END_R=Красный
+option.END_G=Зелёный
+option.END_B=Синий
+option.END_I=Интенсивность
+
+option.EMISSIVE_RECOLOR=Эмиссионная перекраска
+option.EMISSIVE_RECOLOR.comment=Окрашивает определённые излучающие блоки в светлый цвет блока.
+
+option.SKY_VANILLA=Ванильное небо
+option.SKY_VANILLA.comment=Использует ванильный цвет неба.
+
+option.NETHER_VANILLA=Ванильный ад
+option.NETHER_VANILLA.comment=Использует ванильный цвет Ада.
+
+#Color Grading & Tonemap
+option.EXPOSURE=Экспозиция
+option.TonemapExposure.comment=Регулирует общею яркость.
+
+option.AUTO_EXPOSURE=Автоматическая экспозиция
+option.AUTO_EXPOSURE.comment=Позволяет автоматически регулировать общую яркость.
+
+option.CLASSIC_EXPOSURE=Классическая экспозиция
+option.CLASSIC_EXPOSURE.comment=Обеспечивает повшенную экспозицию при посещении помещений.
+
+option.COLOR_GRADING=Градация цвета
+option.COLOR_GRADING.comment=Включает градацию цвета. §e[*]§rЭту опцию не обязательно включать, чтобы изменять ползунки тональной карты, насыщенности и вибрации.
+
+option.TONEMAP_WHITE_CURVE=Белая кривая тональной карты
+option.TONEMAP_WHITE_CURVE.comment=Регулирует, как быстро тональная карта можеть стать белой.
+
+option.TONEMAP_LOWER_CURVE=Нижняя кривая тональной карты
+option.TONEMAP_LOWER_CURVE.comment=Регулирует контрастность более тёмных цветов.
+
+option.TONEMAP_UPPER_CURVE=Верхняя кривая тональной карты
+option.TONEMAP_UPPER_CURVE.comment=Регулирует контрастность более ярких цветов.
+
+option.SATURATION=Насыщенность
+option.SATURATION.comment=Регулирует насыщенность всех цветов.
+
+option.VIBRANCE=Вибрация
+option.VIBRANCE.comment=Регулирует насыщенность менее насыщенных цветов. Хорошо насыщенные цвета менее подвержены влиянию.
+
+#Color Grading Config
+option.CG_RR=Красный - Красное значение
+option.CG_RG=Красный - Зелёное значение
+option.CG_RB=Красный - Синее значение
+option.CG_RI=Значение силы красного цвета
+option.CG_RM=Минимальное значение крастного цвета
+option.CG_RC=Значение красной кривой
+
+option.CG_GR=Зелёный - Красное значение
+option.CG_GG=Зелёный - Зелёное значение
+option.CG_GB=Зелёное - Синее значение
+option.CG_GI=Значение силы зелёного цвета
+option.CG_GM=Минимульное значение зелёного цвета
+option.CG_GC=Значение зелёной кривой
+
+option.CG_BR=Синее - Красное значение
+option.CG_BG=Синее - Зелёное значение
+option.CG_BB=Синее - Синее значение
+option.CG_BI=Значение силы синего цвета
+option.CG_BM=Минимальное значение синего цвета
+option.CG_BC=Значение синей кривой
+
+option.CG_TR=Оттенок - значение красного
+option.CG_TG=Оттенок - значение зелёного
+option.CG_TB=Оттенок - значение синего
+option.CG_TI=Значение силы оттенка
+option.CG_TM=Максимальное значение оттенка
+
+#Extras
+option.OUTLINE=Контур
+option.OUTLINE.comment=Включает эффект контура.
+value.OUTLINE.0=Отключено
+value.OUTLINE.1=Черный
+value.OUTLINE.2=Цветной
+value.OUTLINE.3=1.12 Update Art
+value.OUTLINE.4=Dungeons
+
+option.TOON_LIGHTMAP=Мультяшная световая карта
+option.TOON_LIGHTMAP.comment=Снижает качество ванильного освещения для затемнения cel. §e[*]§rЭта опция известна тем, что заставляет игру "выглядить плохо", включайте её только при необходимости.
+
+option.RETRO_FILTER=Ретро фильтр
+option.RETRO_FILTER.comment=Добавляет пикселизацию и сглаживание. §e[*]§rБолее низкое качество рендеринга для более сильной пикселизации. §c[-]§rНесовместимо с сглаживанием.
+
+option.WORLD_CURVATURE=Кривизна мира
+option.WORLD_CURVATURE.comment=Включает кривизну мира. §e[*]§rработает только в обычном мире. §c[-]§rНедостающие чанки обрабатываются самим Minecraft, которые я не могу исправить. §c[-]§rМожет нарушить выделение блока подсветкой на 1.17.
+
+option.WORLD_CURVATURE_SIZE=Размер кривизны мира
+option.WORLD_CURVATURE_SIZE.comment=Регулирует размер кривизны мира. Отрицательные значения будут наклонять мир вверх.
+
+#Animations
+option.WORLD_TIME_ANIMATION=Анимация мирового времени
+option.WORLD_TIME_ANIMATION.comment=Используйте игровое время для перемещения объектов. §e[*]§rЭтот параметр в основном используется при создании кинематографических изображений.
+
+option.ANIMATION_SPEED=Скорость анимации
+option.ANIMATION_SPEED.comment=Регулирует скоростью анимации.
+
+#Waving Blocks
+option.WAVING_GRASS=Трава
+option.WAVING_PLANT.comment=Позволяет траве колыхаться.
+option.WAVING_CROP=Культуры
+option.WAVING_CROP.comment=Позволяет культурам колыхаться.
+option.WAVING_PLANT=Растения
+option.WAVING_PLANT.comment=Позволяет растениям колыхаться.
+option.WAVING_TALL_PLANT=Высокие растения
+option.WAVING_PLANT.comment=Позволяет колыхаться растениям высотой в 2 блока.
+option.WAVING_LEAF=Листья
+option.WAVING_LEAF.comment=Позволяет листьям колыхаться.
+option.WAVING_VINE=Лозы
+option.WAVING_VINE.comment=Позволяет лозам колыхаться.
+option.WAVING_WATER=Вода
+option.WAVING_WATER.comment=Позволяет воде колыхаться.
+option.WAVING_LAVA=Лава
+option.WAVING_LAVA.comment=Позволяет лаве колыхаться.
+option.WAVING_FIRE=Огонь
+option.WAVING_FIRE.comment=Разрешает огню колыхаться.
+option.WAVING_LANTERN=Фонарь
+option.WAVING_LANTERN.comment=Позволяет фонарю колыхаться.
