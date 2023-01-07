@@ -1,0 +1,87 @@
+#Main
+screen.PostProcess = Последующий процесс
+screen.Patreon=Patreon-награда
+
+#Shadows
+option.shadowMapResolution=Разрешение теней
+option.shadowDistance=Расстояние до тени
+option.SOFT_SHADOWS=Мягкие тени
+option.FIX_SUNLIGHT_LEAK=Устранение утечки подземного света
+option.FIX_SUNLIGHT_LEAK.comment=Это устранит утечку солнечного света под землёй, умножив солнечный свет на пещерный свет.
+
+#Reflections
+option.PBR=Рендеринг на физиеской основе
+option.SSR_METHOD=Метод SSR
+value.SSR_METHOD.0=Отражённый вектор
+value.SSR_METHOD.1=Трассировка лучей
+option.SSR_METHOD.comment=Отражённый вектор: Очень быстрый, только 1 образен, но он не всегда точен. Трассировка лучей: Традиционные отражения экранного пространства (SSR),
+
+#Environment
+option.AMBIENT_OCCLUSION=Окружающая окклюзия
+option.AMBIENT_OCCLUSION.comment=Так же известный как SSAO
+option.GODRAYS=Божественные лучи
+option.WINDY_TERRAIN=Ветреная местность
+option.WIND_SPEED=Скорость ветра
+option.TEMPERATURE=Температура цвета
+option.TEMPERATURE.comment=Нижний -> Холодный. Выше -> Тёплый.
+option.TORCHLIGHT_TEMPERATURE=Температура факела
+option.TORCHLIGHT_TEMPERATURE.comment=Нижний = Холодный. Выше = Тёплый.
+option.WAVING_WATER=Колышущаяся вода
+option.VOLUMETRIC_LIGHT=Объёмный свет
+option.VL_QUALITY=Качество
+value.VL_QUALITY.0=Низко
+value.VL_QUALITY.1=Средне
+value.VL_QUALITY.2=Выше
+option.VL_RENDERDISTANCE=Расстояние рендеринга
+option.LIGHT_SCATTERING=Рассеивание света
+value.LIGHT_SCATTERING.0=Отключено
+value.LIGHT_SCATTERING.1=Божественные лучи
+value.LIGHT_SCATTERING.2=Объёмный свет
+
+#Effects
+option.DISTANCE_BLUR=Расстояние размытия
+option.RAINDROP_REFRACTION=Преломление дождевых капель
+option.MOTIONBLUR=Размытие
+option.MOTIONBLUR_AMOUNT=Степень размытия при движении
+option.DEPTH_OF_FIELD=Глубина резкости
+option.centerDepthHalflife=Скорость фокусировки
+option.DIRTY_LENS=Загрязнённые линзы
+option.DIRTY_LENS.comment=Применяется только к солнцу и луне.
+option.BLOOM=Блум
+option.HEATWAVE=Тепловая волна
+option.HEATWAVE.comment=Только в Аду.
+
+#Surface
+option.PBR_FORMAT=формат PBR
+option.PBR_FORMAT.comment=Выберите формат, соответствующий вашему пакету ресурсов. По умолчанию: r = Сглаженность; g = Металлический.
+option.NORMAL_MAP_BUMPMULT=Обычная карта BUMPMULT
+value.PBR_FORMAT.0=По умолчанию
+value.PBR_FORMAT.1=Greyscale (Legacy)
+value.PBR_FORMAT.2=Pulchra + Continuum Addon
+value.PBR_FORMAT.3=Chroma Hills
+value.PBR_FORMAT.4=Stratum
+option.RAIN_PUDDLES=Дождевые лучи
+option.AUTO_BUMP=Автоматический удар
+option.AUTO_BUMP.comment=Будет автоматически генерировать карты нормалей. Полезно для пакетов ресурсов, которые не включают карты нормалей.
+option.TEXTURE_RESOLUTION=разрешение текстур
+option.TEXTURE_RESOLUTION.comment=Отрегулируйте разрешение в соответствии с Вашим текущим ресурс паком. Вы можете использовать более высокое разрешение, чтобы сохранить некоторые детали.
+option.TORCH_NORMALS=Нормальное отображение факела
+option.TORCH_NORMALS.comment=Имитирует нормальное тображение для факела. Все ещё глючит в некоторых ситуациях!
+option.POM=Отображение параллаксной окклюзии
+option.POM_DEPTH=Шлубина
+
+#PostProcess
+option.CHROMATIC_ABERRATION=Хроматическая аберрация
+option.LENS_FLARE=блик объектива
+option.VIGNETTE=Виньетка
+option.FILM_GRAIN=Зернистость плёнки
+option.CINEMATIC_MODE=Кинематографический режим
+option.CINEMATIC_MODE.comment=Обрезает экран до кинематографического формата.
+
+#Tonemapping
+option.TONEMAPPING=Тональное отображение
+option.EXPOSURE=Экспозиция
+option.SATURATION=Насыщение
+option.CONTRAST=Контраст
+option.BRIGHTNESS=Яркость
+option.WHITESCALE=Белая гамма
