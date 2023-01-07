@@ -1,0 +1,118 @@
+option.VARIABLE_PENUMBRA_SHADOWS=Изменяющиеся полутени теней
+option.shadowDistance=Расстояние до тени
+
+option.SUNLIGHT_BRIGHTNESS=Интенсивность солнечного света
+option.TORCHLIGHT_BRIGHTNESS=Яркость факельного света
+option.TORCHLIGHT_COLOR_TEMPERATURE=Температура факельного света
+option.CANDLELIGHT_COLOR_TEMPERATURE=Свет температуры свечи
+option.HELD_LIGHT=Динамический свет
+
+
+option.GODRAYS=Атмосферные божественные лучи
+option.CUMULUS_CLOUDS=Кучевые облака
+option.CIRRUS_CLOUDS=Перистые облака
+option.CLOUDS_BLOCKY=Блочные облака
+option.CLOUDS_IN_REFLECTIONS=Облако с отражениями
+option.CLOUDS_IN_GI=Облака в GI
+
+
+
+option.WATER_PARALLAX=Параллакс воды
+option.PARALLAX=Отображение параллаксной окклюзии
+option.SMOOTH_PARALLAX=Гладкая параллаксная поверхность
+option.WATER_FOG_DENSITY=Плотность тумана воды
+option.TEXTURE_RESOLUTION=Разрешение текстур
+option.FORCE_WET_EFFECT=Эффект морского дождя
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=Физическая максимальная шероховатость
+option.SPEC_CHANNEL_SMOOTHNESS=Зеркальная гладкость Tex
+option.SPEC_CHANNEL_METALNESS=Зеркальная метталичность Tex
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=Гладкость как шероховатость
+option.TEXTURE_LOD_BIAS=Смещение текстуры LOD
+option.ANISOTROPIC_LOD_BIAS=Анизотропное смещение LOD
+value.ANISOTROPIC_LOD_BIAS.0=Отключено
+value.ANISOTROPIC_LOD_BIAS.1=Включено
+option.RAIN_SPLASH_EFFECT=Эффект брызгов дождя
+option.WET_CAVE_EFFECT=Эффект влажных шахт
+
+
+option.DIFFUSE_TRACE_LENGTH=Диффузная длина следа GI
+option.REDUCED_SECONDARY_GI_RANGE=Уменьшенный вторичный диапазон GI
+value.REDUCED_SECONDARY_GI_RANGE.0=Отключено
+value.REDUCED_SECONDARY_GI_RANGE.1=Включено
+
+option.GI_RESPONSIVENESS=Отзывчивость GI
+option.GI_SCREEN_SPACE_TRACING=отслеживание GI в пространстве экрана
+option.GI_FILTER_QUALITY=Качество фильтра GI
+value.GI_FILTER_QUALITY.0=Низко
+value.GI_FILTER_QUALITY.1=Выше
+
+option.GI_LIGHT_BLOCK_INTENSITY=Интенсивность света у блока
+option.GI_LIGHT_TORCH_INTENSITY=Интенсивность света у факела
+
+option.GI_SIMPLE_SKY_TERM=Более простая модель GI неба
+
+
+option.FULL_RT_REFLECTIONS=Полные отражения трассировки лучей
+option.REFLECTION_TRACE_LENGTH=Длина следа отражения
+option.REFLECTION_SCREEN_SPACE_TRACING=Отслеживание отражения экрана в пространстве
+
+
+option.GI_SECONDARY_SAMPLES=Вторичные образцы GI
+option.LIGHT_LEAK_FIX=Устранение утечки света
+option.RAYTRACE_GEOMETRY_QUALITY=Качество трассировки геометрии
+option.GI_LEAF_TRANSPARENCY=Прозрачность листьев GI
+
+option.GI_RESPONSIVENESS=Отзывчивость GI
+value.GI_RESPONSIVENESS.8=Выше
+value.GI_RESPONSIVENESS.16=Средне
+value.GI_RESPONSIVENESS.32=Низко
+
+
+option.GLOWING_LAPIS_LAZULI_BLOCK=Светящийся блок из ляпис-лазури
+option.GLOWING_REDSTONE_BLOCK=Светящийся блок из красного камня
+option.GLOWING_EMERALD_BLOCK=Светящийся блок из изумрудов
+
+option.TONEMAP_CURVE=Кривая отображения тона
+option.EXPOSURE=Экспозиция
+option.GAMMA=Гамма
+option.BLACK_DEPTH=Чёрная глубина
+option.SATURATION=Насыщение
+option.TONEMAP_OPERATOR=Оператор тональной карты
+option.MOTION_BLUR=Размытие
+option.MOTION_BLUR_HQ=Размытие в HQ
+option.MOTION_BLUR_INTENSITY=Интенсивность размытия
+option.TONEMAP_STRENGTH=Кривая тональной карты
+option.BLOOM_AMOUNT=Сила блума
+option.POST_SHARPENING=Заострение столба
+
+option.FINAL_FXAA=FXAA
+value.FINAL_FXAA.0=Отключить
+value.FINAL_FXAA.1=Включить
+option.PIXEL_LOOK=Пиксельный вид
+value.PIXEL_LOOK.0=Острый
+value.PIXEL_LOOK.1=Кинематографический
+option.SKIP_AA=Пропустить все сглаживания
+option.AA_STYLE=Стиль AA
+value.AA_STYLE.0=Стабильный
+value.AA_STYLE.1=Отзывчивый
+
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=Визуализируйте опасный уровень освещённости
+
+
+
+
+
+screen.ANTIALIASING=Сглаживание
+screen.ATMOSPHERICS=Атмосфера
+screen.ATMOSPHERICS.comment=Божественный лучи, облака и атмосфера
+screen.LIGHTING=Освещение
+screen.LIGHTING.comment=Цвета и интенсивность освещения
+screen.SURFACE=Поверхность
+screen.SURFACE.comment=Всё о рендеринге поверхностей и текстур
+screen.RAYTRACING=Трассировка лучей
+screen.RAYTRACING.comment=Трасировка лучей?!?!?!
+screen.POSTPROCESSING=Последующая обработка (постобработка)
+screen.POSTPROCESSING.comment=Цветокорекция, размытие в движении, финальная презентация
+screen.UTILITY=Утилита
+screen.UTILITY.comment=Полезные вещи для геймплея
+screen.WATER=Вода
