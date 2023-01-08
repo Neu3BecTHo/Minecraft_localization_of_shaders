@@ -1,0 +1,355 @@
+# Change effect names using a language file
+# How to change names and comments:
+# option.EffectName=New effect name
+# option.EffectName.comment=Your comment.
+#
+# Change screen names through language instead of properties
+# How to change screen names and give them comments:
+# screen.ScreenName=New screen name
+# screen.ScreenName.comment=Your comment
+#
+# Tooltip lines ending with "!" are automatically shown red.
+# example: option.SHADOW_FILTER.comment=Smooth out shadows. Very small performance hit!.
+
+
+#composite.fsh
+option.TAA_sharpness=Заострение
+value.TAA_sharpness.0.0=Отключено
+
+option.HandLight=Ручное освещение
+option.HandLight.comment=Переключет ручное освещение.
+
+option.light_brightness=Яркость света
+option.light_brightness.comment=Это должно быть изменено после того, как Вы настроили цвета освещения.
+
+option.r_multiplier=Количество красного
+option.g_multiplier=Количество зелёного
+option.b_multiplier=Количество синего
+option.eyeLight=Адаптация к свету для глаз
+option.eyeLight.comment=Отрегулируйте степень адаптации для глаз к свету, это увеличит или уменьшит интенсивность освещения в целом. Отрегулируйте блум соответствующим образом.
+
+option.sunPathRotation=Угол Солнца или Луны
+option.sunPathRotation.comment=Регулирует угол Солнца или луны.
+value.sunPathRotation.0.0f=По умолчанию
+value.sunPathRotation.-40.0f=Альтернативно
+
+option.EmissiveLightStrength=Сила освещения
+option.EmissiveLightStrength.comment=Регулирует силу освещения излучающих блоков (К примеру, факела).
+
+option.Sunlightamount=Количество солнечного света
+option.Sunlightamount.comment=10, 50, 200.
+
+option.ColoredShadows=Цветовые тени
+option.ColoredShadows.comment=Переключайте цветовые тени. "Оттенет" цвет теней, если они проходят через стекло. Может вызывать некоторые визуальные сбои!
+
+option.grass_shadows=Тени травы
+option.grass_shadows.comment=Переключение теней от травы, также отключает тени для высокой травы и цветов.
+
+option.Penumbra=Изменяющиеся тени полутени
+option.Penumbra.comment=Фильтрация теней. Чем дальше тени удаляются от своего источника, тем более мягкими они становятся. Не работает на AMD или Intel (видеоядро)!
+
+option.shadow_samples=Качество теневого фильтра
+option.shadow_samples.comment=Регулирует качество теневого фильтра. Увеличьте это значение, если у Вас возникают проблемы с включёнными тенями полутени!
+
+option.Farshadowplane=Качество игры с дальними тенями
+option.Farshadowplane.comment=Это дальний уровень карты теней. Более высокие значения снижают качество крупным планом, повышают производительность и расстояние отрисовки теней за счёт растягивания карты теней. При появлении чёрных точек увеличьте качество ближнего уровня тени!
+
+option.Nearshadowplane=Близкое качество уровня теней
+option.Nearshadowplane.comment=Это ближний уровень карты теней. Более низкие значения улучшают качество теней, снижают производительность и расстояние отрисовки теней за счёт сжатия карты теней вместе. Вы захотите увеличить это значение, если увеличите качество тени на дальнем уровне, в противном случае оставьте этот параметр в покое!
+
+option.raytracedShadows=Трассировка лучей с тенями
+option.raytracedShadows.comment=Улучшает крупный план и удалённые тени. Также позволяет отбрасывать тени за пределы карты теней, за пределы Вашего расстояния прорисовки теней. Требуется, чтобы были включены тени! Имеет некоторые проблемы, так как он отслеживается лучами в пространстве экрана.
+
+option.shadowMapResolution=Разрешение тени
+option.shadowMapResolution.comment=Изменяет разрешение тени. Уменьшите расстояние отрисовки теней при низком разрешении, чтобы улучшить качество и уменьшить мерцание!
+value.shadowMapResolution.256=Низшее
+value.shadowMapResolution.512=Очень низко
+value.shadowMapResolution.1024=Низко
+value.shadowMapResolution.2048=Средне
+value.shadowMapResolution.3072=Выше
+value.shadowMapResolution.4096=Очень высоко
+value.shadowMapResolution.6144=Экстримально
+value.shadowMapResolution.8192=Безумно
+value.shadowMapResolution.16384=Сумашедше
+
+option.shadowDistance=Расстояние отрисовки теней
+option.shadowDistance.comment=Изменение расстояния отрисовки теней. Это растягивает карту теней, поэтому обязательно увеличивайте разрешение теней при высоких значениях!
+
+option.Clouds=Облака
+option.Clouds.comment=Переключение облак. Объёмные облака движутся немного быстрее, чем 2D-облака.
+value.Clouds.0=Отключено
+value.Clouds.1=По умолчанию
+value.Clouds.2=2D
+value.Clouds.3=Объёмные
+value.Clouds.4=2D + объёмные
+option.cloudsIT=Качество облак
+option.cloudsIT.comment=Регулирует качество объёмных облаков
+option.cloudreflIT=Качество отражения облаков
+option.cloudreflIT.comment=Регулирует качество отражения объёмных облаков
+option.Cloud_reflection=Отражения облаков
+option.Cloud_reflection.comment=Переключение отражения облаков. &4Среднее влияние на производительность.
+option.cloud_height=Высота облаков
+option.cloud_height.comment=Регулирует высоту облаков.
+option.Cloudsblur=Размытие неба
+option.Cloudsblur.comment=Применение эффекта размытия к небу, чтобы сделать объёмные облака более плавными. У AMD этот фильтр такжк применяется к удалённой местности из-за проблем с драйверами! Не работает с глубиной резкости или размытием в движении!
+
+option.waterRefl=Отражения в воде
+option.waterRefl.comment=Переключение отражений в воде
+
+option.iceRefl=Отражение льда и стекла
+option.iceRefl.comment=Переключение отражения льда и стекла.
+
+option.metallicRefl=Металлические отражения
+option.metallicRefl.comment=Переключение отражения для металлических блоков (К примеру, железный блок). Метталические блоки определяются в block.properties!
+option.polishedRefl=Отполированные отражения
+option.polishedRefl.comment=Переключение отражения для полированных блоков (К примеру, полированный гранит). Отполированные блоки определяются в block.properties!
+
+option.metalStrength=Сила отражений
+option.metalStrength.comment=Регулирует силу отражения для метталических и отполированных блоков. Если отражения становятся чёрными, увеличьте отражение неба!
+option.metallicSky=Отражение неба
+option.metallicSky.comment=Регулирует количество отражений неба на метталических и отполированных блоках. Более высокие значения делают блок более влажным!
+
+option.RainReflections=Отражение дождя
+option.RainReflections.comment=Переключение отражения дождя / влажность во время дождя.
+option.BiomeCheck=Проверка биомов
+option.BiomeCheck.comment=Проверяет, действительно ли биом, в котором Вы находитесь, поддерживает дождливую погоду для отражений. Отключите, чтобы в каждом биоме были отражения дождя или влажности! Обновление Optifine может решить проблемы с отсутствующими отражениями при включении этого параметра!
+option.rainNoise=Шум дождя
+option.rainNoise.comment=Регулирует уровень шума дождя для отражения дождя. Более высокие значения означают меньший шум!
+
+option.defskybox=Скайбокс по умолчанию
+option.defskybox.comment=Переключает поддержку скайбокса по умолчанию, включая пользовательские скайбоксы из пакета ресурсов. Если пакет ресурсов отсутсвует, это позволит использовать только текстуру солнца и луны по умолчанию. Эта опция также автоматически отключет пользовательский шейдер солца и луны!
+option.skyboxblendfactor=Коэффициент смешивания скайбокса
+option.skyboxblendfactor.comment=Изменение количества цветов пользовательского шейдера неба, смешивающегося с текстурой скайбокса по умолчанию.
+
+option.customStars=Звёзды шейдера
+option.customStars.comment=Переключение звёзд.
+
+option.Dynamic_Handlight=Динамическое освещение
+option.Dynamic_Handlight.comment=Такие предметы, как факелы, излучают свет, когда Вы из держите. §4Никакого влияния на производительность.
+
+option.Godrays=Солнечные лучи
+option.Godrays.comment=Заставляет солнце отбрасывать лучи. §4Низкое влияние на производительность.
+
+Volumetric_Lighting
+option.Volumetric_Lighting=Объёмное осещение
+option.Volumetric_Lighting.comment=Включает объёмное освещение, отключает солнечные лучи, так как они поставляются со своими собсвенным освещением!
+option.VL_amount=Степень объёмного освещения
+
+option.Celshading=Затенение
+option.Celshading.comment=Наносит четыре линии на всё, что делает его мультяшным, похожим на пограничье §4Очень низкое влияние на производительность.
+option.Celborder=Толщина контура затенения
+option.Celborder.comment=Регулирует толщину контура затенения.
+option.Celradius=радиус поиска для затенения
+option.Celradius.comment=Регулирует радиус поиска для затенения. Меньшие значения означают меньший радиус поиска, который может пропускать некоторые встроенные границы, создавая больше контурного шейдера. Что тоже может выглядеть круто!
+
+option.SSDO=Окружающая окклюзия (затенение)
+option.SSDO.comment=Делает освещение более реалистичным (SSDO). §4Среднее влияние на производительность.
+option.ao_strength=Количество окружающей окклюзии
+option.ao_strength.comment=Регулирует силу или количество окружающей окклюзии.
+
+option.Fog=Туман
+option.Fog.comment=Переключение тумана
+option.wFogDensity=Плотность тумана в обычном мире.
+option.wFogDensity.comment=Регулирует плотность тумана в обычном мире.
+option.morningFog=Утренний туман
+option.morningFog.comment=Увличение плотности тумана во время восхода солнца.
+
+option.Underwater_Fog=Подводный туман
+option.Underwater_Fog.comment=Переключение подводного тумана.
+option.uFogDensity=Плотность подводного тумана
+option.uFogDensity.comment=Регулирование плотности подводного тумана.
+
+option.uwatertint=Подводный цветовой оттенок
+option.uwatertint.comment=Переключение оттенка синего цвета для грунта под водой.
+
+option.Whiteworld=Белый мир
+option.Whiteworld.comment=Делает грунт белым, в основном используется для отладки. Эта опция была добавлена, потому что её часто запрашивали! Я полагаю, что это выглядит довольно аккуратно для скриншотов!
+
+#composite.vsh
+option.Moonlight=Лунный свет
+option.Moonlight.comment=Регулирует яркость в ночное время
+value.Moonlight.0.0=Очень темно
+value.Moonlight.0.0015=Темно
+value.Moonlight.0.003=По умолчанию
+value.Moonlight.0.006=Ярко
+value.Moonlight.0.009=Очень ярко
+#----------------------------------------------------
+
+#gbuffers_entitites.fsh
+option.MobsFlashRed=Вспышка повреждения
+option.MobsFlashRed.comment=Заставляет мобов и игрока мигать красным при ранении.
+#----------------------------------------------------
+
+#final.fsh
+option.Rain_Drops=Капли дождя
+option.Rain_Drops.comment=Позволяет каплям дождя попадать на экран во время дождя. §4Низкое влияние на производительность.
+
+#Godrays from composite.fsh
+#Defined variables from final.fsh
+option.Godrays_Density=Плотность солнечных лучей
+option.Godrays_Density.comment=Меняет количество солнечных лучей.
+value.Godrays_Density.0.575=Низко
+value.Godrays_Density.1.15=По умолчанию
+value.Godrays_Density.2.3=Средне
+value.Godrays_Density.4.6=Выше
+value.Godrays_Density.9.2=Очень высоко
+
+option.Lens_Flares=Блики на линзах
+option.Lens_Flares.comment=Имитирует эффекты объектива камеры. §4Размытие должно быть включено для бликов объектива. §4Низкое влияние на производительность.
+option.Lens_Flares_Strength=Сила бликов объектива
+option.Lens_Flares_Strength.comment=Регулирует силу бликов объектива.
+value.Lens_Flares_Strength.1.0=Слабо
+value.Lens_Flares_Strength.4.0=По умолчанию
+value.Lens_Flares_Strength.16.0=Сильно
+value.Lens_Flares_Strength.32.0=Очень сильно
+value.Lens_Flares_Strength.64.0=Еще сильнее
+
+option.Bloom=Размытие
+option.Bloom.comment=Добавляет эффект свечени к излучающим блокам. Также используется для свечения солнца или луны. §4Среднее влияние на производительность.
+option.bloom_strength=Сила размытия
+option.bloom_strength.comment=Регулирует силу размытия. Более высокие значения делают изображение более мягким и размытым!
+value.bloom_strength.0.5=Низко
+value.bloom_strength.0.75=По умолчанию
+value.bloom_strength.1.0=Средне
+value.bloom_strength.2.0=Выше
+
+option.Depth_of_Field=Глубина резкости
+option.Depth_of_Field.comment=Имитирует фокусировку глаз на объективах. §4Низкое влияние на производительность.
+option.DoF_Strength=Степень размытости
+option.DoF_Strength.comment=Регулирует степень размытия, используемого для определения глубины резкости.
+
+option.smoothDof=Плавный переход
+option.smoothDof.comment=Переключение плавного перехода между чётким и размытым, фокусируясь на чём-то.
+
+option.Distance_Blur=дальность размытия
+option.Distance_Blur.comment=§4Требуется включени глубины резкости. Заменяет эффект фокусировки глаз рызмытым расстоянием.
+
+option.Dof_Distance_View=Расстояние размытого обзора
+option.Dof_Distance_View.comment=Регулирует расстояние обзора размытия.
+
+option.Motionblur=Размытие движения
+option.Motionblur.comment=Размытие Вашего обзора или камеры во время движения. Не работает с глубиной резкости.
+
+option.MB_strength=Сила размытости
+option.MB_strength.comment=Регулирует силу размытия при размытии в движении.
+value.MB_strength.0.008=Низко
+value.MB_strength.0.014=По умолчанию
+value.MB_strength.0.020=Выше
+#----------------------------------------------------
+
+#gbuffers_terrain.fsh/vsh
+option.WaterParallax=Отображение параллакса для воды
+option.WaterParallax.comment=Включение или отключение отображения параллакса ждя воды. §4Низкое влияние на производительность.
+
+option.waterheight=Высота воды
+option.waterheight.comment=Регулирует высоту воды или силу параллакса.
+
+option.causticsStrength=Сила щелочи
+option.waveSize=Размер волны
+
+option.watertex=Текстура воды
+option.watertex.comment=Переключение текстуры воды по умолчанию из Вашего пакета ресурсов.
+option.wtexblend=Коэффициент смешивания текстуры воды
+option.wtexblend.comment=Регулирует силу текстуры.
+
+option.waterCR=Крастная вода
+option.waterCG=Зелёная вода
+option.waterCB=Синяя вода
+option.waterA=Прозрачность воды
+
+option.nMap=Поддержка RP
+option.nMap.comment=Включение поддержки отображения рельефа или параллакса для пакета ресурсов, пакет ресурсов должен поддерживать это.
+value.nMap.0=Отключено
+value.nMap.1=Отображение рельефа
+value.nMap.2=Параллакс
+
+option.POM_RES=Разрешение RP
+option.POM_RES.comment=Увеличение разрешения сверх разрешения делает его плавным.
+option.POM_DEPTH=Глубина POM
+option.POM_DEPTH.comment=Регулирует глубину отображения параллакса. Высокие значения могут выглядить странно!
+option.POM_DIST=Расстояние отрисовки POM
+option.POM_DIST.comment=Регулирует расстояние, на котором отрисовывается отображение параллакса.
+
+option.Waving_Leaves=Колышущиеся листья
+option.Waving_Leaves.comment=
+
+option.Waving_Vines=Колышущиеся лозы
+option.Waving_Vines.comment=
+
+option.Waving_Grass=Колышущаяся трава
+option.Waving_Grass.comment=Не включает высокую траву из-за некоторых проблем с ней.
+
+option.Waving_Fire=Колешущийся огонь
+option.Waving_Fire.comment=
+
+option.Waving_Lanterns=Колышущиеся фонари
+
+option.Waving_Lava=Колышущаяся лава
+option.Waving_Lava.comment=
+
+option.Waving_Water=Колышущаяся вода
+option.Waving_Water.comment=
+
+option.waves_amplitude=Волна амплитуды
+option.waves_amplitude.comment=Регулирование амплитуды (высоты) волн на воде.
+
+option.animationSpeed=Скорость анимации
+option.animationSpeed.comment=Регулирует скорость всех анимаций, кроме воды.
+
+option.Waving_Lilypads=Колышущиеся лилии
+option.Waving_Lilypads.comment=
+
+option.Waving_Entities=Колышущиеся сущности
+option.Waving_Entities.comment=Включает саженцы, мелкие цветы, пшеницу, морковь, картофель и свеклу.
+#----------------------------------------------------
+
+#gbuffers_weather.vsh
+option.WeatherAngle=Альтернативный погодный ракурс
+option.WeatherAngle.comment=Переключение альтернативного угла обзора погоды.
+
+#Screens
+screen.AA_SCREEN=Сглаживание
+screen.AA_SCREEN.comment=Переключение сглаживания (TTA) и адаптивной резкости.
+
+screen.BLOOM_SCREEN=Размытие
+screen.BLOOM_SCREEN.comment=Изменение вещей, связанных с размытием.
+
+screen.COLORS_SCREEN=Цвета
+screen.COLORS_SCREEN.comment=Изменение различных цветовых вариантов, например гамму или цвета воды.
+
+screen.WATERC_SCREEN=Цвета воды
+screen.LIGHTINGC_SCREEN=Цвета освещения.
+
+screen.DOF_SCREEN=Глубина резкости
+screen.DOF_SCREEN.comment=Изменение параметров, связанных с глубиной резкости.
+
+screen.MB_SCREEN=Размытие при движении
+screen.MB_SCREEN.comment=Изменение вещей, связанных с размытием при движении.
+
+screen.SKY_SCREEN=Небо и освещение
+screen.SKY_SCREEN.comment=Содержит параметры, связанные с небом, такие как световые лучи, вспышки линз и облака.
+
+screen.SHADOWS_SCREEN=Тени
+screen.SHADOWS_SCREEN.comment=Изменение настроек, связанных с тенью, такие как разрешение и расстояние прорисовки.
+
+screen.FOG_SCREEN=Настройки тумана
+screen.FOG_SCREEN.comment=Содержит все параметры, связанные с туманом.
+
+screen.NORMALMAP_SCREEN=Карта нормалей
+screen.NORMALMAP_SCREEN.comment=Включение поддержки bump или параллакса, если пакет ресурсов поддерживает это.
+
+screen.WAVING_SCREEN=Колешыщуеся объекты
+screen.WAVING_SCREEN.comment=Содержит траву, пшеницу, листья и т.д.
+
+screen.EMISSIVE_SCREEN=Излучающий свет
+screen.EMISSIVE_SCREEN.comment=Изменение цвета отражения блоков, которые излучают свет, как факелы.
+option.emissive_R=Красный
+option.emissive_G=Зелёный
+option.emissive_B=Синий
+option.minlight=Минимальный свет
+
+screen.REFLECTIONS_SCREEN=Отражения
+screen.REFLECTIONS_SCREEN.comment=Переключение различных отражений и регулирование их качества.
+
+screen.SHADING_SCREEN=Затенение
+screen.SHADING_SCREEN.comment=Регулирует различные эффекты затенения, такие как окклюзия окружающей среды или затенение.
