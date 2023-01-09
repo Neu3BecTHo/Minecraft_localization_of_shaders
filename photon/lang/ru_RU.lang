@@ -1,0 +1,419 @@
+option.INFO                            = Photon
+value.INFO.0                           = §dby SixthSurge
+value.INFO.1                           = §bby SixthSurge
+
+profile.fast                           = §bБыстро
+profile.fancy                          = §dКрасиво
+
+screen.atmos                           = Атмосфера
+screen.light                           = Свет и тень
+screen.post                            = Постобработка
+screen.terrain                         = Местность
+screen.water                           = Вода
+screen.misc                            = Разное
+
+screen.atmos.comment                   = Варианты атмосферных эффектов, включая облака, туман и небо.
+screen.light.comment                   = Варианты световых эффектов.
+screen.post.comment                    = Варианты для эффектов постобработки, включая эффекты камеры, цветовую градацию и временное увеличение масштаба.
+screen.terrain.comment                 = Варианты эффектов, применяемых к местности, включая нормальное/зеркальное отражение ("PBR") и движующиеся блоки.
+screen.water.comment                   = Варианты для воды.
+screen.misc.comment                    = Варианты, которые не вписывались в вышеуказанные категории, а так же варианты отладки.
+
+screen.clouds                          = Облака
+screen.fog                             = Туман
+screen.sky                             = Небо
+screen.weather                         = Погода
+screen.indirect                        = Непрямое освещение
+screen.lightSources                    = Источники света
+screen.shadows                         = Тени
+screen.camera                          = Камера
+screen.color                           = Цвет
+screen.imageQuality                    = Качество изображения
+screen.bloom                           = Блум
+screen.bloom.comment                   = Эффект свечения вокруг ярких областей
+screen.colorGrading                    = Цветовая градация
+screen.colorGrading.comment            = Пользовательская цветовая градация
+screen.exposure                        = Экспозиция
+screen.temporal                        = Сглаживание
+screen.reflections                     = Отражения
+screen.wavingBlocks                    = Движущиеся блоки
+screen.waterWaves                      = Водяные волны
+screen.waterFog                        = Водяной туман
+
+screen.cloudsLayer0                    = Слой 0
+screen.cloudsLayer1                    = Слой 1
+screen.cloudsLayer2                    = Слой 2
+screen.cloudsLayer3                    = Слой 3
+
+screen.sunlightTint                    = Оттенок солнечного света
+screen.moonlightTint                   = Оттенок лунного света
+screen.ambientLightTint                = Оттенок окружающего света
+
+#----# Atmosphere #--------------------------------------------------------------------------------#
+
+option.SEA_LEVEL                       = Уровень моря
+option.WORLD_TIME_ANIMATION            = Анимация мирового уровня
+option.MOON_PHASE_AFFECTS_BRIGHTNESS   = Фаза луны влияет на яркость
+
+# Clouds
+
+option.CLOUDS_UPSCALING_FACTOR         = Временное увеличение масштаба
+
+value.CLOUDS_UPSCALING_FACTOR.1        = Отключено
+value.CLOUDS_UPSCALING_FACTOR.2        = 2x
+value.CLOUDS_UPSCALING_FACTOR.4        = 4x
+value.CLOUDS_UPSCALING_FACTOR.8        = 8x
+value.CLOUDS_UPSCALING_FACTOR.9        = 9x
+value.CLOUDS_UPSCALING_FACTOR.16       = 16x
+
+option.CLOUDS_SCALE                    = Масштаб облаков
+suffix.CLOUDS_SCALE                    = x
+
+# Layer 0
+
+option.CLOUDS_LAYER0                   = Включено
+option.CLOUDS_LAYER0_SHADOW            = Отбрасываемые тени
+option.CLOUDS_LAYER0_PRIMARY_STEPS     = Основные шаги
+option.CLOUDS_LAYER0_LIGHTING_STEPS    = Шаги освещения
+option.CLOUDS_LAYER0_ALTITUDE          = Высота
+option.CLOUDS_LAYER0_THICKNESS         = Толщина
+option.CLOUDS_LAYER0_COVERAGE          = Покрытие
+option.CLOUDS_LAYER0_FREQUENCY         = Частота
+option.CLOUDS_LAYER0_DENSITY           = Плотность
+option.CLOUDS_LAYER0_WISPINESS         = Тонкость
+option.CLOUDS_LAYER0_SWIRLINESS        = Вихревость
+option.CLOUDS_LAYER0_STRATUS_AMOUNT    = Количество слоёв
+option.CLOUDS_LAYER0_CUMULUS_HUMILIS_AMOUNT = Количество кучевых облаков
+option.CLOUDS_LAYER0_WIND_SPEED        = Скорость ветра
+option.CLOUDS_LAYER0_WIND_ANGLE        = Угол ветра
+option.CLOUDS_LAYER0_WEATHER_INFLUENCE = Влияние погоды
+option.CLOUDS_LAYER0_LOCAL_COVERAGE_VARIATION = Изменение местного покрытия
+
+suffix.CLOUDS_LAYER0_ALTITUDE          = м
+suffix.CLOUDS_LAYER0_THICKNESS         = м
+suffix.CLOUDS_LAYER0_WIND_SPEED        = м/с
+suffix.CLOUDS_LAYER0_WIND_ANGLE        = °
+
+# Layer 1
+
+option.CLOUDS_LAYER1                   = Включено
+option.CLOUDS_LAYER1_SHADOW            = Отбрасываемые тени
+option.CLOUDS_LAYER1_PRIMARY_STEPS     = Основные шаги
+option.CLOUDS_LAYER1_LIGHTING_STEPS    = Шаги освещения
+option.CLOUDS_LAYER1_ALTITUDE          = Высота
+option.CLOUDS_LAYER1_THICKNESS         = Толщина
+option.CLOUDS_LAYER1_COVERAGE          = Покрытие
+option.CLOUDS_LAYER1_FREQUENCY         = Частота
+option.CLOUDS_LAYER1_DENSITY           = Плотность
+option.CLOUDS_LAYER1_WISPINESS         = Тонкость
+option.CLOUDS_LAYER1_SWIRLINESS        = Вихревость
+option.CLOUDS_LAYER1_STRATUS_AMOUNT    = Количество слоёв
+option.CLOUDS_LAYER1_CUMULUS_HUMILIS_AMOUNT = Количество кучевых облаков
+option.CLOUDS_LAYER1_WIND_SPEED        = Скорость ветра
+option.CLOUDS_LAYER1_WIND_ANGLE        = Угол ветра
+option.CLOUDS_LAYER1_WEATHER_INFLUENCE = Влияние погоды
+option.CLOUDS_LAYER1_LOCAL_COVERAGE_VARIATION = Изменение местного покрытия
+
+suffix.CLOUDS_LAYER1_ALTITUDE          = м
+suffix.CLOUDS_LAYER1_THICKNESS         = м
+suffix.CLOUDS_LAYER1_WIND_SPEED        = м/с
+suffix.CLOUDS_LAYER1_WIND_ANGLE        = °
+
+# Layer 2
+
+option.CLOUDS_LAYER2                   = Включено
+option.CLOUDS_LAYER2_MODE              = Тип слоя
+option.CLOUDS_LAYER2_SHADOW            = Отбрасываемые тени
+option.CLOUDS_LAYER2_PRIMARY_STEPS     = Основные шаги
+option.CLOUDS_LAYER2_LIGHTING_STEPS    = Шаги освещения
+option.CLOUDS_LAYER2_ALTITUDE          = Высота
+option.CLOUDS_LAYER2_THICKNESS         = Толщина
+option.CLOUDS_LAYER2_COVERAGE          = Покрытие
+option.CLOUDS_LAYER2_FREQUENCY         = Частота
+option.CLOUDS_LAYER2_DENSITY           = Плотность
+option.CLOUDS_LAYER2_WISPINESS         = Тонкость
+option.CLOUDS_LAYER2_SWIRLINESS        = Вихревость
+option.CLOUDS_LAYER2_CIRRUS_AMOUNT     = Количество перистых облаков (Планарных)
+option.CLOUDS_LAYER2_CIRROCUMULUS_AMOUNT = Количество перисто-кучевых облаков (Планарных)
+option.CLOUDS_LAYER2_STRATUS_AMOUNT    = Количество слоёв (Vol.)
+option.CLOUDS_LAYER2_CUMULUS_HUMILIS_AMOUNT = Количество кучевых облаков (Vol.)
+option.CLOUDS_LAYER2_WIND_SPEED        = Скорость ветра
+option.CLOUDS_LAYER2_WIND_ANGLE        = Угол ветра
+option.CLOUDS_LAYER2_WEATHER_INFLUENCE = Влияние погоды
+option.CLOUDS_LAYER2_LOCAL_COVERAGE_VARIATION = Изменение местного покрытия
+
+value.CLOUDS_LAYER2_MODE.CLOUDS_MODE_VOLUMETRIC = Объемный
+value.CLOUDS_LAYER2_MODE.CLOUDS_MODE_PLANAR = Планарный
+
+suffix.CLOUDS_LAYER2_ALTITUDE          = м
+suffix.CLOUDS_LAYER2_THICKNESS         = м
+suffix.CLOUDS_LAYER2_WIND_SPEED        = м/с
+suffix.CLOUDS_LAYER2_WIND_ANGLE        = °
+
+# Layer 3
+
+option.CLOUDS_LAYER3                   = Включено
+option.CLOUDS_LAYER3_MODE              = Тип слоя
+option.CLOUDS_LAYER3_SHADOW            = Отрасываемые тени
+option.CLOUDS_LAYER3_PRIMARY_STEPS     = Основные шаги
+option.CLOUDS_LAYER3_LIGHTING_STEPS    = Шаги освещения
+option.CLOUDS_LAYER3_ALTITUDE          = Высота
+option.CLOUDS_LAYER3_THICKNESS         = Толщина
+option.CLOUDS_LAYER3_COVERAGE          = Покрытие
+option.CLOUDS_LAYER3_FREQUENCY         = Частота
+option.CLOUDS_LAYER3_DENSITY           = Плотность
+option.CLOUDS_LAYER3_WISPINESS         = Тонкость
+option.CLOUDS_LAYER3_SWIRLINESS        = Вихревость
+option.CLOUDS_LAYER3_CIRRUS_AMOUNT     = Количество перистых облаков (Планарных)
+option.CLOUDS_LAYER3_CIRROCUMULUS_AMOUNT = Количество перисто-кучевых облаков (Планарных)
+option.CLOUDS_LAYER3_STRATUS_AMOUNT    = Количество слоёв (Vol.)
+option.CLOUDS_LAYER3_CUMULUS_HUMILIS_AMOUNT = Количество кучевых облаков (Vol.)
+option.CLOUDS_LAYER3_WIND_SPEED        = Скорость ветра
+option.CLOUDS_LAYER3_WIND_ANGLE        = Угол ветра
+option.CLOUDS_LAYER3_WEATHER_INFLUENCE = Влияние погоды
+
+value.CLOUDS_LAYER3_MODE.CLOUDS_MODE_VOLUMETRIC = Объемный
+value.CLOUDS_LAYER3_MODE.CLOUDS_MODE_PLANAR = Планарный
+
+suffix.CLOUDS_LAYER3_ALTITUDE          = м
+suffix.CLOUDS_LAYER3_THICKNESS         = м
+suffix.CLOUDS_LAYER3_WIND_SPEED        = м/с
+suffix.CLOUDS_LAYER3_WIND_ANGLE        = °
+
+# Sky
+
+option.SUN_ANGULAR_RADIUS              = Угловой радиус солнца
+suffix.SUN_ANGULAR_RADIUS              = °
+
+option.MOON_ANGULAR_RADIUS             = Угловой радиус луны
+suffix.MOON_ANGULAR_RADIUS             = °
+
+option.VANILLA_SUN                     = Ванильное солнце
+option.VANILLA_MOON                    = Ванильная луна
+
+option.HIDE_PLANET_SURFACE             = Скрыть поверхность планеты
+
+option.STARS_COVERAGE                  = Звёздный охват
+option.STARS_INTENSITY                 = Яркость звёзд
+
+# Fog
+
+option.BORDER_FOG                      = Границы тумана
+option.CAVE_FOG                        = Пещерный туман
+option.BLOOMY_FOG                      = Размытый туман
+option.BLOOMY_FOG_INTENSITY            = Сила размытого тумана
+
+# Weather
+
+option.DYNAMIC_WEATHER                 = Динамическая погода
+option.LIGHTNING_FLASHES               = Вспышки молний
+option.DESERT_SANDSTORM                = Песчаная буря в пустыне
+
+option.WEATHER_VARIATION_SPEED         = Скорость изменения
+option.WEATHER_TEMPERATURE_BIAS        = Температурное смещение
+option.WEATHER_HUMIDITY_BIAS           = Смещение влажности
+option.WEATHER_WIND_STRENGTH_BIAS      = Смещение силы ветра
+
+#----# Lighting #----------------------------------------------------------------------------------#
+
+# Light Sources
+
+option.SUNLIGHT_INTENSITY              = Интенсивность солнечного света
+
+option.SUNLIGHT_TINT_R                 = Красный
+option.SUNLIGHT_TINT_G                 = Зелёный
+option.SUNLIGHT_TINT_B                 = Синий
+
+option.MOONLIGHT_INTENSITY             = Интенсивность лунного света
+
+option.MOONLIGHT_TINT_R                = Красный
+option.MOONLIGHT_TINT_G                = Зелёный
+option.MOONLIGHT_TINT_B                = Синий
+
+option.BLOCKLIGHT_INTENSITY            = Интенсивность блочного света
+option.BLOCKLIGHT_TEMPERATURE          = Цветовая температура блочного света
+suffix.BLOCKLIGHT_TEMPERATURE          = K
+
+option.AMBIENT_LIGHT_INTENSITY         = Интенсивность окружающего света
+option.AMBIENT_LIGHT_TINT_R            = Красный
+option.AMBIENT_LIGHT_TINT_G            = Зелёный
+option.AMBIENT_LIGHT_TINT_B            = Синий
+
+# Shadow Mapping
+
+option.shadowMapResolution             = Разрешение тени
+suffix.shadowMapResolution             = ²
+option.shadowDistance                  = Прорисовка тени
+option.sunPathRotation                 = Вращение солнечной траектории
+suffix.sunPathRotation                 = °
+
+value.shadowDistance.64.0              = 4 чанка
+value.shadowDistance.80.0              = 5 чанков
+value.shadowDistance.96.0              = 6 чанков
+value.shadowDistance.112.0             = 7 чанков
+value.shadowDistance.128.0             = 8 чанков
+value.shadowDistance.144.0             = 9 чанков
+value.shadowDistance.160.0             = 10 чанков
+value.shadowDistance.176.0             = 11 чанков
+value.shadowDistance.192.0             = 12 чанков
+value.shadowDistance.208.0             = 13 чанков
+value.shadowDistance.224.0             = 14 чанков
+value.shadowDistance.240.0             = 15 чанков
+value.shadowDistance.256.0             = 16 чанков
+value.shadowDistance.320.0             = 20 чанков
+value.shadowDistance.384.0             = 24 чанка
+value.shadowDistance.512.0             = 32 чанка
+value.shadowDistance.768.0             = 48 чанка
+value.shadowDistance.1024.0            = 64 чанка
+
+option.SHADOW                          = Включено
+option.SHADOW_QUALITY                  = Качество тени
+option.SHADOW_PENUMBRA_SCALE           = Мягкость тени
+option.SHADOW_COLOR                    = Цветные тени
+option.CLOUD_SHADOWS                   = Тени облак
+option.ENTITY_SHADOWS                  = Тени сущностей
+option.BLOCK_ENTITY_SHADOWS            = Блокировать тени сущности
+
+value.SHADOW_QUALITY.SHADOW_QUALITY_FAST = §bБыстро
+value.SHADOW_QUALITY.SHADOW_QUALITY_FANCY = §dКрасиво
+
+#----# Post-Processing #---------------------------------------------------------------------------#
+
+option.tonemap                         = Оператор тональной карты
+
+value.tonemap.tonemapAces              = Aces
+value.tonemap.tonemapAcesFit           = Aces Fit
+value.tonemap.tonemapHejlBurgess       = Hejl-Burgess
+value.tonemap.tonemapOzius             = Ozius
+value.tonemap.tonemapReinhardJodie     = Reinhard-Jodie
+
+# ACES
+
+option.RRT_GLOW_GAIN                   = Усиление свечения RRT
+option.RRT_GLOW_MID                    = Свечение в середине RRT
+option.RRT_RED_SCALE                   = Красная шкала RRT
+option.RRT_RED_WIDTH                   = Красная ширина RRT
+option.RRT_SAT_FACTOR                  = Насыщение RRT
+option.ODT_SAT_FACTOR                  = Насыщение ODT
+
+# Bloom
+
+option.BLOOM                           = Включено
+option.BLOOM_INTENSITY                 = Сила
+option.BLOOM_RADIUS                    = Радиус
+option.BLOOM_TILES                     = Плитка
+
+option.BLOOM_UPSAMPLING_FILTER         = Фильтр с повышающей дискретизацией размытия
+value.BLOOM_UPSAMPLING_FILTER.texture  = §bЛинейный
+value.BLOOM_UPSAMPLING_FILTER.textureBicubic = §dБикубический
+
+# Purkinje Shift
+
+option.PURKINJE_SHIFT_INTENSITY        = Интенсивность сдвига Purkinje
+
+# Color Grading
+
+option.GRADE                           = Включено
+option.GRADE_BRIGHTNESS                = Яркость
+option.GRADE_CONTRAST                  = Контраст
+option.GRADE_SATURATION                = Насыщение
+option.GRADE_VIBRANCE                  = Вибрация
+option.GRADE_WHITE_BALANCE             = Баланс белого
+suffix.GRADE_WHITE_BALANCE             = K
+
+# Exposure
+
+option.CAMERA_EXPOSURE_MIN             = Минимальная экспозиция
+option.CAMERA_EXPOSURE_MAX             = Максимальная экспозиция
+option.CAMERA_EXPOSURE_BIAS            = Смещение экспозиции
+option.CAMERA_EXPOSURE_RATE_DIM_TO_BRIGHT = Скорость осветления
+option.CAMERA_EXPOSURE_RATE_BRIGHT_TO_DIM = Скорость затемнения
+option.CAMERA_MANUAL_EXPOSURE          = Ручная экспозиция
+option.CAMERA_MANUAL_EXPOSURE_USE_SCREEN_BRIGHTNESS = Ручная экспозиция использует ползунок яркости
+option.CAMERA_MANUAL_EXPOSURE_VALUE    = Значение ручной экспозиции
+
+option.HISTOGRAM_BINS                  = Ячейки гистограммы
+option.HISTOGRAM_IGNORE_DIM            = Игнорировать тусклый диапазон
+option.HISTOGRAM_IGNORE_BRIGHT         = Игнорировать яркий диапазон
+
+option.CAMERA_LOCAL_EXPOSURE           = Местная экспозиция
+
+# Image Sharpening
+
+option.CAS                             = Контрастно-адаптивная резкость
+
+# Temporal AA
+
+option.TAA                             = Включено
+option.TAA_UPSCALING_FACTOR            = Временное величение масштаба
+option.TAA_BLEND_WEIGHT                = Масса смеси
+option.TAA_SKIP_CLIPPING               = Пропустить отсечение
+option.TAA_VARIANCE_CLIPPING           = Отсечение дисперсии
+option.TAA_CONFIDENCE_REJECTION        = Отказ от доверия
+option.TAA_OFFCENTER_REJECTION         = Отклонение от центра
+option.TAA_FLICKER_REDUCTION           = Уменьшение мерцания
+
+value.TAA_UPSCALING_FACTOR.1           = Выключено
+value.TAA_UPSCALING_FACTOR.2           = 2x
+value.TAA_UPSCALING_FACTOR.4           = 4x
+
+#----# Terrain #-----------------------------------------------------------------------------------#
+
+option.TEXTURE_FORMAT                  = Формат текстуры
+option.NORMAL_MAP                      = Нормальное отображение
+option.SPECULAR_MAP                    = Зеркальное отображение
+option.RAIN_PUDDLES                    = Дождевые лужи
+
+value.TEXTURE_FORMAT.TEXTURE_FORMAT_LAB = labPBR
+value.TEXTURE_FORMAT.TEXTURE_FORMAT_OLD = Старый PBR / SEUS PBR
+
+# Reflections
+
+option.SSR                             = Включено
+option.SSR_ROUGH                       = Поддержка шероховатости
+option.SSR_RAY_COUNT                   = Количество лучей
+option.SSR_INTERSECTION_STEPS_SMOOTH   = Ступени пересечения - Плавные
+option.SSR_INTERSECTION_STEPS_ROUGH    = Ступени пересечения - Грубые
+option.SSR_REFINEMENT_STEPS            = Этапы уточнения
+option.SSR_ROUGHNESS_THRESHOLD         = Порог шероховатости
+
+# Waving Blocks
+
+option.WAVING_PLANTS                   = Колышущиеся растения
+option.WAVING_LEAVES                   = Колышущиеся листья
+
+#----# Water #-------------------------------------------------------------------------------------#
+
+option.WATER_CAUSTICS                  = Щелочь
+option.WATER_REFRACTION                = Преломление
+option.WATER_TEXTURE                   = Текстура ванильной воды
+
+# Water Waves
+
+option.WATER_PARALLAX                  = Параллакс воды
+option.WATER_DISPLACEMENT              = Вытеснение воды
+
+# Water Fog
+
+option.WATER_DENSITY                   = Плотность
+option.WATER_SCATTERING_COEFF          = Коэффициент рассеяния
+option.WATER_ABSORPTION_R              = §cКрасное §fпоглощение
+option.WATER_ABSORPTION_G              = §aЗелёное §fпоглощение
+option.WATER_ABSORPTION_B              = §9Синее §fпоглощение
+
+#----# Misc #--------------------------------------------------------------------------------------#
+
+option.HIDE_WORLD_BORDER                = Скрыть границу мира
+option.CAMERA_LOCAL_EXPOSURE_COMPARISON = Сравнение локальной экспозиции
+
+# Debug View
+
+option.DEBUG_VIEW                      = Отладочный вид
+
+value.DEBUG_VIEW.DEBUG_VIEW_NONE       = Выключено
+value.DEBUG_VIEW.DEBUG_VIEW_SAMPLER    = Батометр
+value.DEBUG_VIEW.DEBUG_VIEW_WEATHER    = Погода
+value.DEBUG_VIEW.DEBUG_VIEW_HISTOGRAM  = Гистограмм
+
+option.DEBUG_SAMPLER                   = Батометр для просмотра
+option.DEBUG_SAMPLER_EXPOSURE          = Экспозиция батометра
